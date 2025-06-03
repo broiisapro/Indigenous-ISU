@@ -9,201 +9,193 @@
     rel="stylesheet"
   />
   <style>
-    /* Reset & basics */
-    *, *::before, *::after {
+    /* Reset and base styles */
+    * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
     body {
-      margin: 0;
       font-family: 'Roboto', sans-serif;
       line-height: 1.6;
+      background-color: #f4f6f7;
       color: #333;
-      scroll-behavior: smooth;
-      background: #fefefe;
       overflow-x: hidden;
     }
     a {
       color: #00796b;
       text-decoration: none;
-      font-weight: 700;
-      transition: color 0.3s ease;
     }
-    a:hover, a:focus {
-      color: #004d40;
-      outline: none;
+    a:hover {
       text-decoration: underline;
     }
 
-    /* Header with parallax background */
+    /* Header */
     header {
-      position: relative;
-      height: 300px;
-      color: white;
       text-align: center;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center / cover;
-      box-shadow: inset 0 0 0 1000px rgba(0, 77, 64, 0.6);
-      perspective: 1px;
-      perspective-origin: center center;
+      padding: 3rem 1rem 2rem;
+      background: linear-gradient(135deg, #004d40 0%, #00796b 100%);
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     header h1 {
       font-size: 3rem;
-      margin-bottom: 0.3rem;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.7);
-      animation: slideFadeIn 1.2s ease forwards;
+      margin-bottom: 0.25rem;
+      letter-spacing: 0.1em;
     }
     header p {
-      font-size: 1.3rem;
-      font-weight: 400;
-      letter-spacing: 0.05em;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.7);
-      animation: slideFadeIn 1.6s ease forwards;
+      font-size: 1.2rem;
+      font-style: italic;
+      opacity: 0.85;
     }
 
-    /* Navigation bar */
+    /* Navigation */
     nav {
-      background-color: #00796b;
+      background: #004d40;
       display: flex;
       justify-content: center;
       gap: 2rem;
       padding: 1rem 0;
       position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      top: 6.5rem;
+      z-index: 999;
     }
     nav a {
       color: white;
+      font-weight: 700;
       font-size: 1.1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      padding: 0.2rem 0.5rem;
+      padding: 0.3rem 0.5rem;
       border-radius: 4px;
       transition: background-color 0.3s ease;
     }
-    nav a:hover, nav a:focus {
-      background-color: #004d40;
+    nav a:hover,
+    nav a:focus {
+      background-color: #00796b;
       outline: none;
     }
 
-    /* Sections with parallax backgrounds on titles */
+    /* Sections */
     section {
-      max-width: 900px;
-      margin: 3rem auto 5rem;
-      padding: 0 1rem;
-    }
-    section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      min-height: 100vh;
+      padding: 6rem 1rem 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
       position: relative;
-      padding-bottom: 0.4rem;
-      color: #00796b;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      background: url('https://images.unsplash.com/photo-1535407331527-c6302f20e49e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60') no-repeat center center / cover;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: fadeInUp 1s ease forwards;
+      color: #004d40;
+      overflow: hidden;
     }
 
-    /* Reflections */
-    .reflection {
-      background: white;
-      padding: 1.8rem 2rem;
-      margin-bottom: 2.5rem;
-      border-left: 8px solid #004d40;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    /* Parallax backgrounds for sections */
+    #overview {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+    #books {
+      background: url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-shadow: 0 0 6px rgba(0,0,0,0.8);
+      padding-top: 4rem;
+      padding-bottom: 8rem;
+      text-align: left;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    #growth {
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+    #resources {
+      background: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* White semi-transparent box for text readability */
+    .content-box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      max-width: 850px;
+      margin: 0 auto;
       opacity: 0;
       transform: translateY(40px);
       animation-fill-mode: forwards;
     }
-    /* We'll animate each .reflection with delay using JS */
+    .content-box h2 {
+      font-size: 2.5rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #00796b;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      background: none !important;
+      -webkit-background-clip: unset !important;
+      -webkit-text-fill-color: unset !important;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    /* Books & Reflections */
+    #books h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      color: #e0f2f1;
+      text-shadow: 0 0 8px rgba(0,0,0,0.8);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .reflection {
+      background: rgba(255 255 255 / 0.85);
+      border-left: 6px solid #00796b;
+      padding: 1.25rem 1.75rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      color: #004d40;
+      opacity: 0;
+      transform: translateY(40px);
+      animation-fill-mode: forwards;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    }
+    .reflection h3 {
+      margin-bottom: 0.75rem;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: #004d40;
+    }
+    .reflection p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #333;
+    }
 
     /* Footer */
     footer {
-      background-color: #004d40;
-      color: white;
       text-align: center;
-      padding: 1.5rem 1rem;
+      padding: 1.5rem;
+      background: #004d40;
+      color: white;
       font-size: 1rem;
-      letter-spacing: 0.05em;
-      user-select: none;
+      letter-spacing: 0.06em;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.25);
     }
 
     /* Animations */
     @keyframes fadeInUp {
-      0% {
+      from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(40px);
       }
-      100% {
+      to {
         opacity: 1;
         transform: translateY(0);
-      }
-    }
-    @keyframes slideFadeIn {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Parallax effect for section backgrounds */
-    .parallax {
-      position: relative;
-      overflow: hidden;
-    }
-    .parallax::before {
-      content: '';
-      position: absolute;
-      top: -20%;
-      left: 0;
-      right: 0;
-      bottom: -20%;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: -1;
-      transform: translateZ(0);
-      will-change: transform;
-      filter: brightness(0.85);
-    }
-    /* Different backgrounds for sections */
-    #overview.parallax::before {
-      background-image: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-    }
-    #books.parallax::before {
-      background-image: url('https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-    }
-    #growth.parallax::before {
-      background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-    }
-    #resources.parallax::before {
-      background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      section h2 {
-        font-size: 1.8rem;
-      }
-      nav {
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-      nav a {
-        font-size: 1rem;
       }
     }
   </style>
@@ -222,8 +214,10 @@
   </nav>
 
   <section id="overview" class="parallax">
-    <h2>Overview</h2>
-    <p>This website is a personal portfolio that documents my learning and growth in Indigenous education. Through reading, reflecting, and engaging with Indigenous authors and perspectives, I’ve come to understand the importance of truth, reconciliation, and storytelling.</p>
+    <div class="content-box">
+      <h2>Overview</h2>
+      <p>This website is a personal portfolio that documents my learning and growth in Indigenous education. Through reading, reflecting, and engaging with Indigenous authors and perspectives, I’ve come to understand the importance of truth, reconciliation, and storytelling.</p>
+    </div>
   </section>
 
   <section id="books" class="parallax">
@@ -246,17 +240,21 @@
   </section>
 
   <section id="growth" class="parallax">
-    <h2>My Growth</h2>
-    <p>At the beginning of this journey, I had limited knowledge of Indigenous history and culture. I’ve since come to recognize the importance of listening, learning, and unlearning. My ability to engage respectfully with Indigenous perspectives has grown, and I now strive to be an ally by supporting Indigenous voices and initiatives in education and beyond.</p>
+    <div class="content-box">
+      <h2>My Growth</h2>
+      <p>At the beginning of this journey, I had limited knowledge of Indigenous history and culture. I’ve since come to recognize the importance of listening, learning, and unlearning. My ability to engage respectfully with Indigenous perspectives has grown, and I now strive to be an ally by supporting Indigenous voices and initiatives in education and beyond.</p>
+    </div>
   </section>
 
   <section id="resources" class="parallax">
-    <h2>Further Resources</h2>
-    <ul>
-      <li><a href="https://nctr.ca/" target="_blank" rel="noopener noreferrer">National Centre for Truth and Reconciliation</a></li>
-      <li><a href="https://www.ictinc.ca/blog" target="_blank" rel="noopener noreferrer">Indigenous Corporate Training Blog</a></li>
-      <li><a href="https://www.facinghistory.org/resource-library/residential-schools-canada" target="_blank" rel="noopener noreferrer">Facing History: Residential Schools in Canada</a></li>
-    </ul>
+    <div class="content-box">
+      <h2>Further Resources</h2>
+      <ul>
+        <li><a href="https://nctr.ca/" target="_blank" rel="noopener noreferrer">National Centre for Truth and Reconciliation</a></li>
+        <li><a href="https://www.ictinc.ca/blog" target="_blank" rel="noopener noreferrer">Indigenous Corporate Training Blog</a></li>
+        <li><a href="https://www.facinghistory.org/resource-library/residential-schools-canada" target="_blank" rel="noopener noreferrer">Facing History: Residential Schools in Canada</a></li>
+      </ul>
+    </div>
   </section>
 
   <footer>
@@ -264,14 +262,13 @@
   </footer>
 
   <script>
-    // Animate reflections on scroll
+    // Animate reflections and content boxes on scroll
     const reflections = document.querySelectorAll('.reflection');
+    const contentBoxes = document.querySelectorAll('.content-box');
 
     function isInViewport(el) {
       const rect = el.getBoundingClientRect();
-      return (
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.85
-      );
+      return rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.85;
     }
 
     function runAnimations() {
@@ -282,6 +279,12 @@
           el.classList.add('animated');
         }
       });
+      contentBoxes.forEach(el => {
+        if (isInViewport(el) && !el.classList.contains('animated')) {
+          el.style.animation = `fadeInUp 0.8s ease forwards`;
+          el.classList.add('animated');
+        }
+      });
     }
 
     window.addEventListener('scroll', runAnimations);
@@ -289,4 +292,3 @@
   </script>
 </body>
 </html>
-
