@@ -1,103 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podcast - Your Book Website</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom font import for Inter */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            @apply bg-gray-50 text-gray-800; /* Light background, dark text */
-        }
-        /* Style for active navigation link */
-        .nav-link.active {
-            @apply text-blue-600 border-b-2 border-blue-600;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Podcast - Your Book Website</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      @apply bg-gray-50 text-gray-800;
+    }
+    .nav-link.active {
+      @apply text-blue-600 border-b-2 border-blue-600;
+    }
+  </style>
 </head>
 <body class="min-h-screen flex flex-col">
-    <!-- Header/Navigation Bar -->
-    <header class="bg-white shadow-md p-4">
-        <nav class="container mx-auto flex flex-wrap justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-gray-900 rounded-md p-2">Bad Creee by Jessica Johns</a>
-            <div class="space-x-4 md:space-x-6 flex flex-wrap justify-center mt-2 md:mt-0">
-                <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Introduction</a>
-                <a href="podcast.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg active">Podcast</a>
-                <a href="novel.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Novel Presentation</a>
-                <a href="research.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Research</a>
-                <a href="conclusion.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Conclusion</a>
-                <a href="sources.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Sources</a>
-            </div>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="bg-white shadow-md p-4">
+    <nav class="container mx-auto flex flex-wrap justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-gray-900 rounded-md p-2">Bad Cree by Jessica Johns</a>
+      <div class="space-x-4 md:space-x-6 flex flex-wrap justify-center mt-2 md:mt-0">
+        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Introduction</a>
+        <a href="podcast.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg active">Podcast</a>
+        <a href="novel.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Novel Presentation</a>
+        <a href="research.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Research</a>
+        <a href="conclusion.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Conclusion</a>
+        <a href="sources.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Sources</a>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Main Content Area -->
-    <main class="flex-grow container mx-auto p-6 md:p-8">
-        <section class="bg-white p-8 rounded-lg shadow-lg">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 text-center">Our Podcast: A Deep Dive into the Novel</h1>
-            <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-                Welcome to our podcast! In this episode, we explore key themes, character arcs, and significant literary devices found in <strong class="text-blue-600">[Insert Book Title Here]</strong>. We discuss our interpretations and some of the questions the novel raises.
-            </p>
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto p-6 md:p-8">
+    <section class="bg-white p-8 rounded-lg shadow-lg">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 text-center">Echoes of the Land: A Deep Dive into <em>Bad Cree</em></h1>
+      <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+        In this episode of <strong class="text-blue-600">Echoes of the Land</strong>, we explore how <em>Bad Cree</em> by Jessica Johns interweaves personal grief, spiritual horror, and the legacy of Canada’s residential school system. We discuss how Mackenzie's journey reflects the real-life goals of the Truth and Reconciliation Commission and the healing power of cultural reconnection.
+      </p>
 
-            <div class="aspect-w-16 aspect-h-9 mb-8 max-w-3xl mx-auto">
-                <!-- Placeholder for Podcast Embed (e.g., Spotify, SoundCloud, or direct audio) -->
-                <!-- Replace this iframe with your actual podcast embed code -->
-                <iframe class="w-full h-80 rounded-lg shadow-xl" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1149959659&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" frameborder="0" allow="autoplay; fullscreen"></iframe>
-                <p class="text-sm text-gray-500 mt-2 text-center">
-                    Replace the `iframe` source with your actual podcast embed code (e.g., from Spotify, SoundCloud, Anchor, or your own hosting). Adjust `width` and `height` as needed, but Tailwind's `aspect-w-16 aspect-h-9` should make it responsive.
-                </p>
-            </div>
+      <div class="aspect-w-16 aspect-h-9 mb-8 max-w-3xl mx-auto">
+        <iframe class="w-full h-80 rounded-lg shadow-xl"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1149959659&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          frameborder="0" allow="autoplay; fullscreen"></iframe>
+        <p class="text-sm text-gray-500 mt-2 text-center">
+          Listen to the full episode above. The podcast is also available on Spotify, Apple Podcasts, and Google Podcasts.
+        </p>
+      </div>
 
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Podcast Episode Summary:</h2>
-            <div class="text-lg text-gray-700 leading-relaxed space-y-4">
-                <p>
-                    <strong>Episode Title:</strong> <em class="text-blue-600">[Your Podcast Episode Title]</em>
-                </p>
-                <p>
-                    <strong>Key Discussion Points:</strong>
-                </p>
-                <ul class="list-disc list-inside ml-4 space-y-2">
-                    <li>Analysis of the protagonist's journey and motivations.</li>
-                    <li>Exploration of the central conflict and its resolution.</li>
-                    <li>Discussion of significant literary themes, such as freedom, identity, or societal norms.</li>
-                    <li>Examination of the author's writing style and its impact on the narrative.</li>
-                    <li>Our personal takeaways and lingering questions.</li>
-                </ul>
-                <p>
-                    Listen in as we break down <strong class="text-blue-600">[Insert Book Title Here]</strong> and offer our insights. We encourage you to listen to the episode before exploring the rest of our website!
-                </p>
-                <p>
-                    You can also download the transcript <a href="#" class="text-blue-600 hover:underline font-semibold">here</a> (if applicable).
-                </p>
-            </div>
-        </section>
-    </main>
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Podcast Episode Summary</h2>
+      <div class="text-lg text-gray-700 leading-relaxed space-y-4">
+        <p>
+          <strong>Episode Title:</strong> <em class="text-blue-600">Echoes of the Land: A Deep Dive into <em>Bad Cree</em></em>
+        </p>
+        <p><strong>Key Discussion Points:</strong></p>
+        <ul class="list-disc list-inside ml-4 space-y-2">
+          <li>Introduction to the Truth and Reconciliation Commission (TRC) and its relevance to <em>Bad Cree</em>.</li>
+          <li>Examination of intergenerational trauma and the symbolism of the wîhtikô in the novel.</li>
+          <li>Mackenzie’s spiritual and emotional journey as she reconnects with family and Cree traditions.</li>
+          <li>How memory, even when painful, acts as a guide toward healing.</li>
+          <li>The novel's alignment with the TRC’s Calls to Action, particularly cultural revitalization and community healing.</li>
+        </ul>
+        <p>
+          As Mackenzie returns home, she begins to understand her pain not as an isolated experience, but as part of a collective journey. Her healing mirrors the work the TRC strives for — a return to culture, community, and truth.
+        </p>
+        <p>
+          This episode sheds light on how Indigenous literature can echo real-world struggles and healing processes, offering both truth and transformation through story.
+        </p>
+        <p>
+          <a href="#" class="text-blue-600 hover:underline font-semibold">Download the transcript</a> (PDF format).
+        </p>
+      </div>
+    </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white p-6 text-center mt-8 rounded-t-lg">
-        <p>&copy; 2025 Moksh Siruvani All rights reserved.</p>
-        <p class="text-sm mt-2">English ISU | Recreation of this project is illegal under the AFL-3.0 licensing agreement</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-6 text-center mt-8 rounded-t-lg">
+    <p>&copy; 2025 Moksh Siruvani. All rights reserved.</p>
+    <p class="text-sm mt-2">English ISU | Reproduction of this project is prohibited under the AFL-3.0 license</p>
+  </footer>
 
-    <script>
-        // JavaScript to highlight the active navigation link
-        document.addEventListener('DOMContentLoaded', () => {
-            const currentPath = window.location.pathname.split('/').pop();
-            const navLinks = document.querySelectorAll('.nav-link');
-
-            navLinks.forEach(link => {
-                const linkPath = link.getAttribute('href');
-                if (linkPath === currentPath) {
-                    link.classList.add('active');
-                } else {
-                    link.classList.remove('active');
-                }
-            });
-        });
-    </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const currentPath = window.location.pathname.split('/').pop();
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        if (linkPath === currentPath) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
