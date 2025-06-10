@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sources - Your Book Website</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import for Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800; /* Light background, dark text */
+        }
+        /* Style for active navigation link */
+        .nav-link.active {
+            @apply text-blue-600 border-b-2 border-blue-600;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-md p-4">
+        <nav class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-900 rounded-md p-2">Your Book Website</a>
+            <div class="space-x-4 md:space-x-6 flex flex-wrap justify-center mt-2 md:mt-0">
+                <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Introduction</a>
+                <a href="podcast.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Podcast</a>
+                <a href="novel.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Novel Presentation</a>
+                <a href="research.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Research</a>
+                <a href="conclusion.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Conclusion</a>
+                <a href="sources.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg active">Sources</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto p-6 md:p-8">
+        <section class="bg-white p-8 rounded-lg shadow-lg">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 text-center">Works Cited and Sources</h1>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+                This page lists all the sources and references used throughout our project on <strong class="text-blue-600">[Insert Book Title Here]</strong>, including academic papers, articles, interviews, and other materials.
+            </p>
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Academic Sources</h2>
+                <ul class="list-disc list-outside ml-6 text-lg text-gray-700 leading-relaxed space-y-3">
+                    <li>
+                        <strong class="text-blue-600">Placeholder:</strong> Author, A. A. (Year). <em>Title of book or article.</em> Publisher/Journal.
+                        <br>
+                        <em>Example:</em> Smith, J. (2018). <em>The Symbolic Language of [Book Title].</em> Literary Press.
+                    </li>
+                    <li>
+                        <strong class="text-blue-600">Placeholder:</strong> Editor, E. E. (Ed.). (Year). <em>Title of edited book.</em> Publisher.
+                        <br>
+                        <em>Example:</em> Jones, M. (Ed.). (2020). <em>Essays on [Book Title] and Its Impact.</em> Academic Books.
+                    </li>
+                    <li>
+                        <strong class="text-blue-600">Placeholder:</strong> Author, B. B. (Year, Month Day). Title of webpage. <em>Website Name.</em> URL
+                        <br>
+                        <em>Example:</em> Doe, R. (2021, March 15). Understanding [Book Title]'s Historical Context. <em>Literary Insights.</em> https://www.literaryinsights.com/book-context
+                    </li>
+                    <li>
+                        <strong class="text-blue-600">Placeholder:</strong> Author, C. C. (Year). Title of dissertation or thesis (Doctoral dissertation or master’s thesis). Name of Institution.
+                        <br>
+                        <em>Example:</em> Brown, S. (2019). Gender Roles in [Book Title] (Doctoral dissertation). University of Toronto.
+                    </li>
+                    <!-- Add more academic sources as needed -->
+                </ul>
+
+                <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Podcast Specific Sources (if any)</h2>
+                <ul class="list-disc list-outside ml-6 text-lg text-gray-700 leading-relaxed space-y-3">
+                    <li>
+                        <strong class="text-blue-600">Placeholder:</strong> Host, H. H. (Host). (Year, Month Day). <em>Podcast Episode Title</em> [Audio podcast episode]. In <em>Podcast Name.</em> Publisher. URL (if available)
+                        <br>
+                        <em>Example:</em> Green, L. (Host). (2024, May 10). <em>Exploring Dystopian Futures in Literature</em> [Audio podcast episode]. In <em>The Bookworm's Nook.</em> Spotify.
+                    </li>
+                    <!-- Add more podcast sources as needed -->
+                </ul>
+
+                <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Images and Multimedia Sources</h2>
+                <ul class="list-disc list-outside ml-6 text-lg text-gray-700 leading-relaxed space-y-3">
+                    <li>
+                        <strong class="text-blue-600">Placeholder:</strong> Creator/Artist. (Year). <em>Image Title</em> [Type]. Source. URL
+                        <br>
+                        <em>Example:</em> [Artist Name]. (2015). <em>[Book Title] Cover Art</em> [Digital Image]. Penguin Random House. https://www.penguinrandomhouse.com/
+                    </li>
+                    <!-- Add more image/multimedia sources as needed -->
+                </ul>
+
+                <p class="text-lg text-gray-700 leading-relaxed mt-6">
+                    Please ensure all sources are cited according to the required style (e.g., MLA, APA, Chicago) for your English class. The examples above are generic.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 text-center mt-8 rounded-t-lg">
+        <p>&copy; 2025 Your Name / Group Name. All rights reserved.</p>
+        <p class="text-sm mt-2">English Class Project | For Educational Purposes Only</p>
+    </footer>
+
+    <script>
+        // JavaScript to highlight the active navigation link
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href');
+                if (linkPath === currentPath) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
