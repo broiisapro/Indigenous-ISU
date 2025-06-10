@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Your Book Website</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import for Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800; /* Light background, dark text */
+        }
+        /* Style for active navigation link */
+        .nav-link.active {
+            @apply text-blue-600 border-b-2 border-blue-600;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-md p-4">
+        <nav class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-900 rounded-md p-2">Your Book Website</a>
+            <div class="space-x-4 md:space-x-6 flex flex-wrap justify-center mt-2 md:mt-0">
+                <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Introduction</a>
+                <a href="podcast.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Podcast</a>
+                <a href="novel.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Novel Presentation</a>
+                <a href="research.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg active">Research</a>
+                <a href="conclusion.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Conclusion</a>
+                <a href="sources.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Sources</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto p-6 md:p-8">
+        <section class="bg-white p-8 rounded-lg shadow-lg">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 text-center">In-Depth Research and Analysis</h1>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+                This section showcases the extensive research conducted to deepen our understanding of <strong class="text-blue-600">[Insert Book Title Here]</strong> and its broader contexts. We explore historical, social, and literary aspects that illuminate the novel.
+            </p>
+
+            <div class="grid grid-cols-1 gap-8 mb-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Historical Context</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Discuss the historical period in which the novel is set or was written. How did major events, social movements, or political climates influence the author's work or the characters' experiences?
+                        <strong class="text-blue-600">Placeholder for historical context research.</strong>
+                        <br><br>
+                        <em>Example:</em> The novel's portrayal of [event/societal issue] is deeply rooted in the [specific historical period]. For instance, [detail of historical event] directly impacts [character/plot point].
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Critical Reception and Interpretations</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Summarize how the novel was received by critics, both at the time of its publication and in contemporary analysis. What are some varied interpretations or scholarly debates surrounding the work?
+                        <strong class="text-blue-600">Placeholder for critical reception research.</strong>
+                        <br><br>
+                        <em>Example:</em> Early critics often praised [aspect], while modern scholars emphasize [different aspect]. There's an ongoing debate regarding [specific interpretation], with some arguing [view 1] and others [view 2].
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Author's Background and Influences</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Investigate the author's life, other works, and any known influences that shaped their writing and themes in this particular novel.
+                        <strong class="text-blue-600">Placeholder for author background research.</strong>
+                        <br><br>
+                        <em>Example:</em> [Author's Name]'s personal experiences in [location/profession] are often mirrored in the novel's themes of [theme A] and [theme B]. They were also influenced by [literary movement/philosopher].
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <img src="https://placehold.co/700x450/DDA0DD/000000?text=Research+Related+Image+Placeholder" alt="Research Related Image Placeholder" class="mx-auto rounded-lg shadow-md max-w-full h-auto">
+                <p class="text-sm text-gray-500 mt-2">Replace this image with a visual related to your research, such as a historical photograph, a relevant map, or a critical theory diagram.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 text-center mt-8 rounded-t-lg">
+        <p>&copy; 2025 Your Name / Group Name. All rights reserved.</p>
+        <p class="text-sm mt-2">English Class Project | For Educational Purposes Only</p>
+    </footer>
+
+    <script>
+        // JavaScript to highlight the active navigation link
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href');
+                if (linkPath === currentPath) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
