@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sources - Your Book Website</title>
+    <title>Sources - The Bad Cree Website</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -17,13 +17,17 @@
         .nav-link.active {
             @apply text-blue-600 border-b-2 border-blue-600;
         }
+        .hanging-indent {
+            padding-left: 2em;
+            text-indent: -2em;
+        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
     <!-- Header/Navigation Bar -->
     <header class="bg-white shadow-md p-4">
         <nav class="container mx-auto flex flex-wrap justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-gray-900 rounded-md p-2">Your Book Website</a>
+            <a href="index.html" class="text-2xl font-bold text-gray-900 rounded-md p-2">Bad Creee by Jessica Johns</a>
             <div class="space-x-4 md:space-x-6 flex flex-wrap justify-center mt-2 md:mt-0">
                 <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Introduction</a>
                 <a href="podcast.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Podcast</a>
@@ -40,36 +44,69 @@
         <section class="bg-white p-8 rounded-lg shadow-lg">
             <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 text-center">Works Cited and Sources</h1>
             <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-                This page lists all the sources and references used throughout our project on <strong class="text-blue-600">[Insert Book Title Here]</strong>, including academic papers, articles, interviews, and other materials.
+                This page lists all the sources and references used throughout the project on <strong class="text-blue-600">The Bad Cree</strong>, including all materials.
             </p>
 
             <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">Academic Sources</h2>
-                <ul class="list-disc list-outside ml-6 text-lg text-gray-700 leading-relaxed space-y-3">
-                    <li>
-                        <strong class="text-blue-600">Placeholder:</strong> Author, A. A. (Year). <em>Title of book or article.</em> Publisher/Journal.
-                        <br>
-                        <em>Example:</em> Smith, J. (2018). <em>The Symbolic Language of [Book Title].</em> Literary Press.
+                <ul class="list-none text-lg text-gray-700 leading-relaxed space-y-3">
+                    <li class="hanging-indent">
+                        Amnesty International Canada. “Out of Sight, Out of Mind.” 2020. <em>Amnesty International Canada</em>, <a href="https://www.amnesty.ca/our-work/issues/indigenous-peoples/missing-and-murdered-indigenous-women-and-girls/out-of-sight-out-of-mind/" class="text-blue-600 hover:underline">https://www.amnesty.ca/our-work/issues/indigenous-peoples/missing-and-murdered-indigenous-women-and-girls/out-of-sight-out-of-mind/</a>. Accessed 10 June 2025.
                     </li>
-                    <li>
-                        <strong class="text-blue-600">Placeholder:</strong> Editor, E. E. (Ed.). (Year). <em>Title of edited book.</em> Publisher.
-                        <br>
-                        <em>Example:</em> Jones, M. (Ed.). (2020). <em>Essays on [Book Title] and Its Impact.</em> Academic Books.
+                    <li class="hanging-indent">
+                        Boughton Law. "Government of Canada Adopts UNDRIP." 2025. <em>Boughton Law</em>, <a href="https://boughtonlaw.com/news/government-of-canada-adopts-undrip/" class="text-blue-600 hover:underline">https://boughtonlaw.com/news/government-of-canada-adopts-undrip/</a>. Accessed 10 June 2025.
                     </li>
-                    <li>
-                        <strong class="text-blue-600">Placeholder:</strong> Author, B. B. (Year, Month Day). Title of webpage. <em>Website Name.</em> URL
-                        <br>
-                        <em>Example:</em> Doe, R. (2021, March 15). Understanding [Book Title]'s Historical Context. <em>Literary Insights.</em> https://www.literaryinsights.com/book-context
+                    <li class="hanging-indent">
+                        Chacaby, Ma-Nee. <em>A Two-Spirit Journey</em>. University of Manitoba Press, 2016. <em>University of Manitoba Press</em>, <a href="https://uofmpress.ca/books/detail/a-two-spirit-journey" class="text-blue-600 hover:underline">https://uofmpress.ca/books/detail/a-two-spirit-journey</a>. Accessed 10 June 2025.
                     </li>
-                    <li>
-                        <strong class="text-blue-600">Placeholder:</strong> Author, C. C. (Year). Title of dissertation or thesis (Doctoral dissertation or master’s thesis). Name of Institution.
-                        <br>
-                        <em>Example:</em> Brown, S. (2019). Gender Roles in [Book Title] (Doctoral dissertation). University of Toronto.
+                    <li class="hanging-indent">
+                        Government of Canada. “Implementing the United Nations Declaration on the Rights of Indigenous Peoples Act.” 2021. <em>Justice Canada</em>, <a href="https://www.justice.gc.ca/eng/declaration/" class="text-blue-600 hover:underline">https://www.justice.gc.ca/eng/declaration/</a>. Accessed 10 June 2025.
                     </li>
-                    <!-- Add more academic sources as needed -->
+                    <li class="hanging-indent">
+                        Indigenous Foundations. “Environmental Justice and Indigenous Rights.” <em>UBC Indigenous Foundations</em>, <a href="https://indigenousfoundations.arts.ubc.ca/environmental_justice_and_indigenous_rights/" class="text-blue-600 hover:underline">https://indigenousfoundations.arts.ubc.ca/environmental_justice_and_indigenous_rights/</a>. Accessed 10 June 2025.
+                    </li>
+                    <li class="hanging-indent">
+                        Johns, Jessica. <em>The Bad Cree</em>. Harper Perennial, 2023.
+                    </li>
+                    <li class="hanging-indent">
+                        Justice Canada. “Trauma and Violence-Informed Approaches to Policy.” 2024. <em>Justice Canada</em>, <a href="https://www.justice.gc.ca/eng/rp-pr/jr/tv-vt/" class="text-blue-600 hover:underline">https://www.justice.gc.ca/eng/rp-pr/jr/tv-vt/</a>. Accessed 10 June 2025.
+                    </li>
+                    <li class="hanging-indent">
+                        McLeod, Neal. <em>Cree Narrative Memory</em>. Purich Publishing, 2007.
+                    </li>
+                    <li class="hanging-indent">
+                        Montana Office of Public Instruction. “Reviewing Disney’s Pocahontas.” 2018. <em>Montana Office of Public Instruction</em>, <a href="https://opi.mt.gov/Portals/92/Docs/IndianEd/PocahontasReview.pdf" class="text-blue-600 hover:underline">https://opi.mt.gov/Portals/92/Docs/IndianEd/PocahontasReview.pdf</a>. Accessed 10 June 2025.
+                    </li>
+                    <li class="hanging-indent">
+                        Montreal Serai. “Telling Our Twisted Histories.” <em>Montreal Serai</em>, <a href="https://montrealserai.com/article/telling-our-twisted-histories/" class="text-blue-600 hover:underline">https://montrealserai.com/article/telling-our-twisted-histories/</a>. Accessed 10 June 2025.
+                    </li>
+                    <li class="hanging-indent">
+                        Native Women’s Association of Canada. “History of the Indian Act.” 2023. <em>Native Women’s Association of Canada</em>, <a href="https://www.nwac.ca/indian-act/" class="text-blue-600 hover:underline">https://www.nwac.ca/indian-act/</a>. Accessed 10 June 2025.
+                    </li>
+                    <li class="hanging-indent">
+                        Native Women’s Association of Canada. “Amnesty International Calls for Urgent Action for Missing and Murdered Indigenous Women.” 2014. <em>Native Women’s Association of Canada</em>, <a href="https://www.nwac.ca/2014/10/amnesty-international-calls-for-urgent-action-for-missing-and-murdered-indigenous-women/" class="text-blue-600 hover:underline">https://www.nwac.ca/2014/10/amnesty-international-calls-for-urgent-action-for-missing-and-murdered-indigenous-women/</a>. Accessed 10 June 2025.
+                    </li>
+                    <li class="hanging-indent">
+                        Simpson, Leanne Betasamosake. <em>As We Have Always Done: Indigenous Freedom Through Radical Resistance</em>. University of Minnesota Press, 2017.
+                    </li>
+                    <li class="hanging-indent">
+                        Soonias, Dallas. Review of <em>The Bad Cree</em>. Quoted in research paper.
+                    </li>
+                    <li class="hanging-indent">
+                        <em>Telling Our Twisted Histories</em>. CBC Podcasts, 2022. <a href="https://www.cbc.ca/listen/cbc-podcasts/1126-telling-our-twisted-histories" class="text-blue-600 hover:underline">https://www.cbc.ca/listen/cbc-podcasts/1126-telling-our-twisted-histories</a>. Accessed 10 June 2025.
+                    </li>
+                    <li class="hanging-indent">
+                        The Canadian Encyclopedia. “Idle No More.” <em>The Canadian Encyclopedia</em>, <a href="https://www.thecanadianencyclopedia.ca/en/article/idle-no-more" class="text-blue-600 hover:underline">https://www.thecanadianencyclopedia.ca/en/article/idle-no-more</a>. Accessed 10 June 2025.
+                    </li>
+                    <li class="hanging-indent">
+                        Truth and Reconciliation Commission of Canada. <em>Honouring the Truth, Reconciling for the Future: Summary of the Final Report of the Truth and Reconciliation Commission of Canada</em>. 2015. <a href="https://ehprc.ca/wp-content/uploads/2018/11/trc_calls_to_action_english2.pdf" class="text-blue-600 hover:underline">https://ehprc.ca/wp-content/uploads/2018/11/trc_calls_to_action_english2.pdf</a>. Accessed 10 June 2025.
+                    </li>
+                    <li class="hanging-indent">
+                        United Nations. <em>United Nations Declaration on the Rights of Indigenous Peoples</em>. 2007. <a href="https://www.un.org/development/desa/indigenouspeoples/declaration-on-the-rights-of-indigenous-peoples.html" class="text-blue-600 hover:underline">https://www.un.org/development/desa/indigenouspeoples/declaration-on-the-rights-of-indigenous-peoples.html</a>. Accessed 10 June 2025.
+                    </li>
                 </ul>
 
-                <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Podcast Specific Sources (if any)</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Podcast Specific Sources</h2>
                 <ul class="list-disc list-outside ml-6 text-lg text-gray-700 leading-relaxed space-y-3">
                     <li>
                         <strong class="text-blue-600">Placeholder:</strong> Host, H. H. (Host). (Year, Month Day). <em>Podcast Episode Title</em> [Audio podcast episode]. In <em>Podcast Name.</em> Publisher. URL (if available)
@@ -90,7 +127,6 @@
                 </ul>
 
                 <p class="text-lg text-gray-700 leading-relaxed mt-6">
-                    Please ensure all sources are cited according to the required style (e.g., MLA, APA, Chicago) for your English class. The examples above are generic.
                 </p>
             </div>
         </section>
@@ -98,8 +134,8 @@
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white p-6 text-center mt-8 rounded-t-lg">
-        <p>&copy; 2025 Your Name / Group Name. All rights reserved.</p>
-        <p class="text-sm mt-2">English Class Project | For Educational Purposes Only</p>
+        <p>&copy; 2025 Moksh Siruvani All rights reserved.</p>
+        <p class="text-sm mt-2">English ISU | Recreation of this project is illegal under the AFL-3.0 licensing agreement</p>
     </footer>
 
     <script>
