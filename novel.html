@@ -23,7 +23,7 @@
     <!-- Header/Navigation Bar -->
     <header class="bg-white shadow-md p-4">
         <nav class="container mx-auto flex flex-wrap justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-gray-900 rounded-md p-2">Bad Creee by Jessica Johns</a>
+            <a href="index.html" class="text-2xl font-bold text-gray-900 rounded-md p-2">Bad Cree by Jessica Johns</a>
             <div class="space-x-4 md:space-x-6 flex flex-wrap justify-center mt-2 md:mt-0">
                 <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Introduction</a>
                 <a href="podcast.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Podcast</a>
@@ -38,101 +38,396 @@
     <!-- Main Content Area -->
     <main class="flex-grow container mx-auto p-6 md:p-8">
         <section class="bg-white p-8 rounded-lg shadow-lg">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 text-center">Novel Presentation: A Deeper Look at Bad Cree</h1>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 text-center">Novel Presentation: A Deeper Look at The Bad Cree</h1>
             <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-                This section provides a detailed presentation and analysis of <strong class="text-blue-600">Bad Cree</strong>. Here, we delve into its core elements, offering insights into its literary significance and impact.
+                This section provides a detailed presentation and analysis of <strong class="text-blue-600">The Bad Cree</strong>. Here, we delve into its core elements, offering insights into its literary significance and impact, with considerations for the Truth and Reconciliation Commission (TRC) and the United Nations Declaration on the Rights of Indigenous Peoples (UNDRIP).
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Summary and Plot Overview</h2>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        Begin with a concise summary of the novel's plot, ensuring you cover the major turning points and narrative structure.
-                        <strong class="text-blue-600">Placeholder for novel summary.</strong>
-                        <br><br>
-                        <em>Example:</em> The novel follows [protagonist's name] as they navigate [central conflict/setting], facing [key challenges] and ultimately discovering [resolution/lesson]. The narrative unfolds over [time period], providing a compelling journey through [specific themes].
-                    </p>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex justify-between items-center">
+                        Summary and Plot Overview
+                        <button id="plotToggle" class="text-blue-600 hover:text-blue-800 focus:outline-none p-2 rounded-md">
+                            <svg id="plotArrow" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="plotContent" class="hidden text-lg text-gray-700 leading-relaxed space-y-4">
+                        <p>
+The story of "The Bad Cree" by Jessica Johns unfolds over approximately one year, marked by Mackenzie's terrifying dreams following her sister Sabrina's death, culminating in a confrontation with an entity.
+                        </p>
+                        <p class="font-semibold">Approximate Timeline of Events:</p>
+                        <p>
+                            <strong>One Year Prior to Chapter 1:</strong> Sabrina, Mackenzie's older twin sister, dies traumatically. Mackenzie, overwhelmed by grief, isolates herself in Vancouver and does not attend Sabrina's funeral.
+                        </p>
+                        <p>
+                            <strong>One Year Following Sabrina's Death (Prologue/Chapter 1):</strong> Mackenzie is suddenly having realistic and frightening dreams that somehow seem to bring back physical objects (pine branches, a crow's head) and she has these items in her waking life as well. Initially, she disregards them as her hallucinations resulting from the trauma. Crows continue to appear in her dreams and waking life coupled with the emergence of an ominous motif as it becomes clearer and clearer to her that crows are a real thing for her now.
+                        </p>
+                        <p>
+                            <strong>Ongoing (Chapters 2-3):</strong> Mackenzie's dreams intensify.
+                        </p>
+                        <p>
+                            <strong>Chapter 2:</strong> Mackenzie's dream of killing a crow in order to save Sabrina is followed by an absurdly large gathering of crows outside of her Vancouver apartment that seem to "see" Mackenzie and accuse her. When Mackenzie discusses her dreams with her co-worker, Jolie, she mentions the idea of talking with Auntie Doreen. Mackenzie revisits her past "darkness dreams" from childhood, particularly about the rats eating Sabrina which foreshadowed Sabrina getting ill as a child in an eerie manner. Mackenzie recalls Kôhkum (grandmother) teach them about their land, stories about "the lake" (Aotchi Inu Sakayagan) when Sabrina predicted a storm. Mackenzie also sees a healed cut on Sabrina's collarbone in an old photograph and realizes that the woods represented in it, were from, and about, her current terrifying dreams as well.
+                        </p>
+                        <p>
+                            <strong>Chapter 3:</strong> Mackenzie is still dislocated in Vancouver and battling two completely new experiences of guilt for not having attended Sabrina's funeral and suffering from both physical and emotional exhaustion. She calls her mother to talk about the scar on Sabrina's collarbone, and her mother denies it even exists, which continues to compound Mackenzie's disorientation. She continues to be bothered and taunted by a familiar auditory hallucination: the "shuck, shuck, shuck" of Kôhkum's tobacco tin, which she now finds to be frightening.
+                        </p>
+                        <p class="font-semibold">Continuing Dreams and Mounting Evidence (Chapters 4-6):</p>
+                        <p>
+                            <strong>Chapter 4:</strong> Mackenzie goes for a walk on the beach, with a dozen or so crows following her. She discusses her supernatural experiences with her cousin Cassidy, who also possess them. Mackenzie encounters a ghostly figure that resembles Sabrina, which causes her to wake up soaked and throwing up, as the line between dream and reality continues to merge.
+                        </p>
+                        <p>
+                            <strong>Chapter 5:</strong> Mackenzie wakes up drenched, sick with fever, and totally disoriented after dreaming that she was drowning. Her phone won't turn on, probably due to water damage. Luckily, Jolie shared location data that offers to help Mackenzie. According to Jolie's location data, Mackenzie is now in Alberta near a lake. After they have both registered their shock, Jolie continues her story and adds a question. She believes that Mackenzie has taken some risks, and after she answers, there is enormous pressure on her as Jolie reminds her of their uncle. Their uncle was put in a mental institution because of visions that kept happening. As soon as evil thought they had Mackenzie were behind her, bad things happened to Mackenzie. Mackenzie agreed to discuss the human festering issues with Jolie. Afterwards, when Jolie had left, Mackenzie's phone finally decided to turn on and show her the text from an unknown number: "Close. Same womb. Different sister," which sounded like a connection to Mackenzie's deceased sister, Tracy.
+                        <p>
+                            <strong>Chapter 6:</strong> Feeling overwhelmed by strange text messages that she believes are from Sabrina, Mackenzie hides in the laundry room the same way she had hidden, earlier, rather than go home after Sabrina's death. She remembers grieving Kôhkum, but had been avoiding grieving Sabrina. She calls the number and finds it not in service. Then she calls Auntie Verna, opening up about everything that happened. Auntie Verna relates everything back to spiritual messages she has experienced and tells the story of Mushom (grandfather) and the consequences from not respecting Mosquah (bear). Auntie Verna encourages Mackenzie to come home, with a growing sense of the gravity of the situation, Mackenzie makes plans to leave Vancouver, arranging time away from work and thinking back to times with Sabrina.
+                        </p>
+                        <p class="font-semibold">Return Home and Family Confrontations (Chapters 7-10):</p>
+                        <p>
+                            <strong>Chapter 7:</strong> Mackenzie arrives in Edmonton frightened to be back home. She remembers Kôhkum is gone forever, and she remembers three crude men she met at a gas station where Tracy backed down with them, which is not like Tracy, and she remembers Auntie Doreen. Auntie Doreen picks Mackenzie up, and they drive to High Prairie. As Mackenzie approaches her parents' house, she feels like an outsider even though there is a wonderful family reunion full of laughter and noise. Mackenzie sees crows on the birch tree; Auntie Doreen had told her crows can be tricksters. Mackenzie quickly falls asleep in Sabrina's old room and has no dreams.
+                        </p>
+                        <p>
+                            <strong>Chapter 8:</strong> Mackenzie is in the bathroom, still reeling from Auntie Verna's dreams, convinced the dreams are all done. She plays Mortal Kombat with Tracy, which prompts a conversation about Mackenzie's absence at Sabrina's funeral and her fear of confronting difficult situations. Tracy discloses that Sabrina was the "glue" that held the three of them together. Mackenzie goes to sleep and dreams about a bonfire with a younger Tracy, Sabrina, and Cassidy. Mackenzie watches Tracy walk off into the woods, and then Sabrina follows her on the same trail that Tracy ran off on. A spectral, decomposing Sabrina then appears to Mackenzie. Sabrina tells Mackenzie she's a coward and that Mackenzie abandoned her, and that she has a horrible scar on her collarbone, signifying a "hollow" where her self used to be. The dream ends with Sabrina reaching for Mackenzie, and Mackenzie waking up disturbed.
+                        </p>
+                        <p>
+                            <strong>Chapter 9:</strong> Mackenzie (which she is now called Makwa) has ongoing difficulty reconciling with harrowing dreams and is seeking refuge at home. She has an increasingly fractured relationship with her family, particularly her mother. During a call with Jolie, it suddenly and random stops working. During a scavenging trip with her mother, they share stories about their pasts and Makwa is unable to stop dreaming...the same way her mother experienced in her own past.
+                        </p>
+                        <p>
+                            <strong>Chapter 10:</strong> Mackenzie and her mother come home from an excursion. Mackenzie tries to get ahold of Diane and Jolie, but they are unavailable. A walk with Cassidy stirs a repressed memory of a nighttime in the woods with Tracy and Sabrina that traumatized her. Mackenzie looks up dream spirits. The family schedules a karaoke night and Mackenzie hesitantly agrees to go.
+                        </p>
+                        <p class="font-semibold">The Truth Begins to Emerge (Chapters 11-13):</p>
+                        <p>
+                            <strong>Chapter 11:</strong> Mackenzie is at a local bar called the Stardust for karaoke. She is flooded with an intense dream-memory. Mackenzie has a watch of a flashback memory of experiencing a traumatic event from her past in the company of Sabrina and Tracy, near a lake. Sabrina emerges from behind a tree in the woods with a huge cut on her head that’s pouring blood. Dream-Sabrina is blaming Mackenzie for not coming after her and she gives Mackenzie a piece of bloodied flannel. Mackenzie wakes up on the bar floor of the Stardust with the same piece of bloodied flannel balled up in her hand.
+                        </p>
+                        <p>
+                            <strong>Chapter 12:</strong> Back at home, Mackenzie confides in her family that the dreams have continued to happen and it has affected her physically. She shows the blood-stained flannel. Cassidy admits she has had premonitory dreams also. Tracy cries and admits that she also had dreams with Sabrina and she was in a dream on the night Sabrina died and actually said to Tracy that she would never wake up. Tracy self-medicated with alcohol to-not dream with Sabrina; she admits that Sabrina started presenting herself to Tracy about a month ago and told her to take Mackenzie home. They talk about the differences in Mackenzie's dreams to what she tells them about her understanding of Sabrina's death (the snow, the lake troubled, blood coming from Sabrina's chest with a "claw mark" scar). Tracy theorizes they are dreaming or experiencing something they could not see or would not see. They start searching for stories on "Weetigo" (Wendigo) as the dreams have a winter theme to them and they discuss it, wondering whether Sabrina encountered Weetigo.
+                        </p>
+                        <p>
+                            <strong>Chapter 13:</strong> The sisters shared and revisited their dreams and dissociated memories of the traumatic evening they experienced at the lake, three years ago, with their mother and their aunts. As they share their experience, they bond over the emotion and trauma of the experience. The family consults their elders and research on local history of what the "week to go", means. Mackenzie receives a cryptic message, apparently from Sabrina.
+                        </p>
+                        <p class="font-semibold">Confrontation and Its Aftermath (Chapters 14-15):</p>
+                        <p>
+                            <strong>Chapter 14:</strong> Mackenzie, Tracy, and Cassidy plan a surprise encounter with the evil entity or "wîhtikô" (the "fake Sabrina") from Mackenzie's dream, and bring that in to kill it! Mackenzie goes into the dream, and finds herself in the clearing where she first discovered Sabrina's body. She sees Tracy suspended and not responding, and realizes this is the actual scene. The "real" Sabrina enters, confused. The suspended "Tracy" (wîhtikô "Tracy") "whispers", and Sabrina's eyes turn milky white. She walks toward the "Tracy". When Sabrina touches the dream-Tracy, the "whispering" ceases, dream-Tracy collapses, then opens its eyes and bites Sabrina's throat and then explodes into dust. Sabrina collapses, her eyes appear to roll into the back of her head. The crows come down and cover her body. Mackenzie re-experiences the scene she saw previously, but now with context. One crow flaps away and drops a dark feather in front of her feet. Mackenzie reaches for it. Sabrina wakes up, her chest wound has been quickly stitched, and she runs to be with Dream Mackenzie and Cassidy (without indication, it appears.) A deep groan comes from what was once Sabrina exposing the "wîhtikô" in its true form, "wîhtikô Sabrina", grey haired and decomposing, its chest still laid open, as Mackenzie held its hand. The wîhtikô communicated, indicating that it has already touched everyone in their house and that it had seen Mackenzie's sister sleep. It hissed "Gekko-battas!" and dissolved. Mackenzie is pulled back to her reality, kneeling next to Tracy, her upstairs neighbor, who is covered in a grotesque, growing fungal mass, also, her skin cracking like bark. Mackenzie screamed.
+                        </p>
+                        <p>
+                            <strong>Chapter 15:</strong> Immediately after, the weeping mushroom fungus appears all over Tracy's body. The mushrooms disappear as Tracy wakes. The family is in shock. They interrogate Mackenzie and Tracy for their dangerously collaborative efforts to bring the entity into descriptive reality. They find a black feather that Mackenzie saw in her dream, which is now on Tracy's bed, and confirms a link to the dream worlds. Mom and the aunties admit they have been looking into the wîhtikow and know what it is already, thanks to Kookum Mary Jane. Tracy recounts her dream experience, that she was in Sabrina's body, and she saw Sabrina drawn into the "floating Tracy" (the wîhtikow) and covered with crows. Tracy describes sinking, feeling roots twinning through her body. Mackenzie realizes the wîhtikow was already in the house, as the bloody fabric from the bar dream, which they thought was Sabrina's blood, is discovered to be blood from the wîhtikow and has been sitting on Tracy's bedside table this whole time. The family burns the bloody fabric.They explain the nature of the wîhtikow: it originates from greed (i.e., greed that came with the oil boom), it feeds on the weakness of vulnerable people, it can shape-shift and hypnotize, and that the consequences of its actions are the immediate demise of its prey (i.e., death within a year or two). It, "makes a home in a person first." A spirited discussion breaks out, with Mackenzie and Tracy wanting to fight, and Mom not wanting to do anything but be together. Auntie Doreen indicates that she is aware of the dream connection with Tracy and Sabrina, and even knew, to some extent, about her own mother's dreams. She states she doesn't dream herself and that the crows are useful.
+                        </p>
+                        <p class="font-semibold">The Final Confrontation (Chapters 16-17):</p>
+                        <p>
+                            <strong>Chapter 16:</strong> Back in Tracy's room after the horrific dream incident, Mackenzie decides that she will definitely go to the lake and confront the wehtigo. Tracy and Cassidy are adamant they are going as well. Mackenzie lets it slip that she will tell her mother and aunties, but she didn't want to tell them that they were coming along. While kneading dough to help her mother, she starts thinking about the wisdom shared through generations again. Tracy calmly told their mother and aunties, and everybody just accepted it and they helped them pack. The next morning, Mackenzie woke from a very vivid darkness dream, where she perceived Tracy was freezing, only to suddenly wake up to realize that Tracy had the same dream, but about her. Cassidy had declared to Mackenzie to not go in the water. When they were driving to the lake, they saw "witches broom," which is a parasitic growth, just like our wehtigo. Mackenzie and her friends see a brand new, unnaturally straight, silent trail leading directly to the lake, where there were rooted dead pine trees. They held hands and were ready.
+                        </p>
+                        <p>
+                            <strong>Chapter 17:</strong> Mackenzie and Cassidy are trying to retrace their steps through the woods to find Tracy after they have lost her. The woods are confusing and hostile. They arrive at a clearing, which Tracy is gazing at, entranced by what appears to be Sabrina. In actuality, it is an evil wihtigo imitating Sabrina in order to feed on Tracy's trauma. After briefly being transfixed by the wihtigo herself as she stared deeply into the lake, Mackenzie realizes what is happening. With Cassidy's help, and Auntie's buck knife, Mackenzie stabs the wihtigo, thereby breaking its hypnotic hold on Tracy. This causes the wihtigo to be consumed by a murder of crows and disappear. The sisters are shocked and confused, and return to the lake to purify themselves. They process the events that happened, and considered the wihtigo's sinister methods of isolation and manipulation. They acknowledged the wise protective power of the crow feather Tracy regained, and found solace and a renewed bond with each other as well as the healing nature of the lake. They left in peace to return home.
+                        </p>
+                        <p class="font-semibold">Aftermath and Healing (Chapter 18):</p>
+                        <p>
+                            <strong>Chapter 18:</strong> Mackenzie, Cassidy, and Tracy return home after the ‘week to go thing’ exhausted and relieved. Mackenzie has reconciled with her past choices; she realizes her contribution to the discord and pain and she reconnects with her family, especially her mom. Mackenzie dreams of her kôhkum. She experiences sensory stimulation (physical contact) and is comforted and closure regarding Sabrina's fate. The chapter ends with Mackenzie’s farewell dinner before returning to Vancouver. The chapter reflects family’s everlasting strength, navigating grief and love, and hopefulness for healing and future connections. The author reflects the idea that although the immediate threat is gone, the ‘bad’ is not gone, and that there is significance in being able to live with it, but it does not denote them as ‘bad’, that is just a part of life.
+                        </p>
+                    </div>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Key Characters Analysis</h2>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        Discuss the main characters, their motivations, development, and significance to the story.
-                        <strong class="text-blue-600">Placeholder for character analysis.</strong>
-                        <br><br>
-                        <em>Example:</em> [Character A] serves as the moral compass, undergoing a significant transformation. [Character B] provides a foil, highlighting contrasting ideologies, while [Character C] embodies the societal pressures of the era.
-                    </p>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex justify-between items-center">
+                        Key Characters Analysis
+                        <button id="charactersToggle" class="text-blue-600 hover:text-blue-800 focus:outline-none p-2 rounded-md">
+                            <svg id="charactersArrow" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="charactersContent" class="hidden text-lg text-gray-700 leading-relaxed space-y-4">
+                        <p>
+                            <strong>Mackenzie (Mack/Nikotwâsik/Narrator):</strong> The main character, Mackenzie is a young Cree woman grieving for the loss of her sister, Sabrina. Mackenzie leaves her former life behind by moving to Vancouver, but is constantly haunted by dreams that are terrifying, vivid and very real, as well as supernatural happenings (crows seem to constantly follow her). When she firsts begins in the narrative, she is skeptical of her surroundings and tends to rationalize her experiences when she encounters these seemingly unexplainable events. In this way, Mackenzie is initially resistant to the possibilities the spiritual world offers. Throughout the book, Mackenzie deals with deep loss, guilt, and trauma, which then leads to breakdowns, anxiety, and isolation. She confronts memories she wished to suppress, cannot tell the difference between dream realm and waking realm, and attempts control over her dreams. Mackenzie develops as the narrator, becoming more introspective, defensive and increasingly, more conflicted and troubled by the decisions she made in her past. Ultimately, she displays resilience, courage, and better understanding about the spiritual aspects related to her heritage. Mackenzie is committed to finding answers, in protecting her family, and in challenging the evil spirit that bourne upon her family. In the end she undergoes an emotional and physical catharsis, reconciles her past experiences, and finds a renewed experience of peace and acceptance.
+                        </p>
+                        <p>
+                            <strong>Sabrina:</strong> Mackenzie's dead twin sister, Sabrina is the nucleus of trauma anchoring the book. Her death is a bleeding sore for Mackenzie and the whole family, and her memory also inhabits Mackenzie's dreams and guilt and shame. She appears in Mackenzie's dreams in different versions: first as a horrific, tattered, rotten corpse-like being with a scar, perhaps indicating unresolved grief and possibly a connection that is spiritual; second, she appears in memories, or represents the memories, as Mackenzie recalls Sabrina as an accomplished artist, untethered or perhaps untameable, possibly less fleshy and more spiritual (she had met Mushom). In Mackenzie's actual life, the wîhtikô is often seen impersonating and conjuring Sabrina, controlling and harming in the shell of Sabrina's body. The haunting of Sabrina lingers. At the close of the story, Mackenzie receives reassurance about Sabrina's health through Kôhkum's message.
+                        </p>
+                        <p>
+                            <strong>Tracy:</strong> The other (older) twin sister to Mackenzie, Tracy experiences the childhood rat dream and has a deep relationship to Sabrina and a unique relationship with Sabrina through dreams. At first, she has a complicated relationship with Mackenzie, and she is shown as removed, apathetic in a way that is foreign to her character, and has struggled with addiction, showing another way the family is collectively traumatized. She is frank, angry, and blames Mackenzie for her absence, and shows the raw loss of being a person who is left to take on the family's grief. She is strong, but also obviously impacted by the death of Sabrina and she linked her previous struggles with alcohol use, to escaping an unending cycle that is frustratingly loss of Sabrina in dreams. Near the end of the story, she is more grounded, practical, and becomes protective; she goes to help Mackenzie and Cassidy confront the supernatural in the climax. She is reacting to trauma that cannot be seen and because of that, opens herself up to the wîhtikô, but in the end she is a true survivor.
+                        </p>
+                        <p>
+                            <strong>Jolie:</strong> Mackenzie's friend and coworker from Vancouver. Jolie is supportive, practical, and initially assists Mackenzie in rationalizing her dreams, but is also open to the idea these dreams have some supernatural element to them and is both emotionally supportive and tangibly helpful (cleaning, cooking). Through Jolie, Mackenzie can experience respite and some normalcy which is a critical source of comfort and grounding for Mackenzie, but her interactions with Jolie are sometimes more about Jolie than about Mackenzie's internal realities.
+                        </p>
+                        <p>
+                            <strong>Auntie Doreen:</strong> Mackenzie's aunt, she is a strong, wise, and lively elder who lives in High Prairie, active in the community, and also someone who is more connected to traditional Cree ways. Auntie Doreen is unique from the rest of Mackenzie's family in that she is more familiar with Cree beliefs, though when Mackenzie calls her, Auntie Doreen is dismissive of him to begin with. Then she pours on a nice mix of concern, sarcasm, playful demeanor, and vague advice, suggesting she knows the spiritual world at a deeper level than he does. She is insightful and grounding, someone from whom Mackenzie can draw wisdom, she understands Indigenous spirituality, and embodies the traditional role of aunties as keepers of knowledge and protectors. She is a narrator, a "dream oracle" to whom people recount their horrific secrets, and eventually reassures Mackenzie of the nature of the wîhtikô and its relationship to greed. Auntie Doreen offers practical support with spiritual.
+                        </p>
+                        <p>
+                            <strong>Auntie Verna:</strong> Another one of Mackenzie’s aunts, Auntie Verna is seen as a comforting, hearty, and slightly mischievous character. Auntie Verna is also astute and knows the meaning of Mackenzie’s experiences and knows about the wîhtikô. She offers Mackenzie emotional support and wisdom, she was also aware it was time for Mackenzie to reveal things to her mother when she was ready. She offered Mackenzie support in subtle strength and practicality.
+                        </p>
+                        <p>
+                            <strong>Cassidy (Cass):</strong> Mackenzie's cousin and a year younger than Mackenzie. She has the same ability as Mackenzie, but it is a little different. Cassidy can see the future in her dreams, a talent that she has possessed since a child. Unlike Mackenzie, Cassidy is more comfortable with her ability and offers understanding, compassion, and encouragement for Mackenzie to return home. Cassidy is lively, sociable, and affectionate, which is representative of pure connection. Cass is also quieter and observant than Mackenzie and carries the burden of having premonitory dreams. She becomes a very loyal and dependable cousin and is useful in the way of emotional and physical support for Mackenzie and Tracy. Cass is basic and pragmatic, very direct and a touch cynical, but that is why it is lighthearted support. She is a steady ground and a supportive intermediary between Mackenzie and Tracy.
+                        </p>
+                        <p>
+                            <strong>Mom (Loretta Cardinal):</strong> Mackenzie’s mother, dealing with her own grief and intergenerational trauma. She has initial apprehension about Mackenzie’s move and is presented as stoic, strong and pragmatic about her grief. She throws herself into projects to avoid having to talk about the difficult stuff. Mom has her own trauma and regret, and at times seems emotionally unavailable, but fiercely protective of her daughters. She exhibits resilience, and after a while breaks down, overflowing with relief and love, illustrating both her emotional burden and deep love. She becomes a central figure of comfort and restorative embrace.
+                        </p>
+                        <p>
+                            <strong>Kôhkum (Grandmother/Cookum):</strong> Mackenzie's passed Grandmother. She is a matriarch, powerful, wise, deeply loving, humorous, and self-resilient. She carries traditional Cree knowledge. She has taught both Mackenzie and her family about land, about plants, and about time. The teachings about land, plants, and time are a foundation for Mackenzie and her family in knowing about their traditional heritage. Because Mackenzie's Kôhkum died, the family experienced trauma, but Mackenzie never forgets Kôhkum. Mackenzie's experience of Kôhkum is always based on Mackenzie's memories. Mackenzie experiences Kôhkum in her dream. In her dream, Kôhkum brings Mackenzie deep comfort, that Sabrina will be all right and that she carries Mackenzie's ancestors with her and they will always be there because of her Kôhkum.
+                        </p>
+                        <p>
+                            <strong>Mushom (Grandfather):</strong> Mackenzie's deceased grandfather, whose spirit was seen by Sabrina to show a spiritual connection to the family and land. He is representative of humour and has a deep connection to Kôhkum.
+                        </p>
+                        <p>
+                            <strong>Dad:</strong> Mackenzie's father, a quieter but emotional presence. He comes off loving and accepting, a bloodless love. The tears indicate both the family relieved together in love.
+                        </p>
+                        <p>
+                            <strong>Tim:</strong> Cassidy's dog, a somewhat old dog with labored breathing. He provides a gentle, grounding, and comforting presence, a symbol of normalcy and affection amidst the chaos.
+                        </p>
+                        <p>
+                            <strong>The Wîhtikô (The Week to Go):</strong> The primary antagonist, a wicked creature from Cree mythology that eats the living and represents greed and corruption. It spreads misfortune and jealousy and uses dead loved ones (mostly Sabrina) to try and lure others in to harm them. It's a physical manifestation of grief, trauma, and unresolved spiritual inequity, and it intends to take advantage of the characters' weaknesses as well as use illusions to entice them. The horror of its transformation and the way it speaks to the characters makes it an important and terrifying foe.
+                        </p>
+                        <p class="font-semibold">Other Characters:</p>
+                        <p>
+                            <strong>Ruby:</strong> The server and karaoke host at the Stardust, someone who is always there and never changes in the bar.
+                        </p>
+                        <p>
+                            <strong>Pat:</strong> A young Cree man who walks into the Stardust. This is when Cassidy gets up to go and see him.
+                        </p>
+                        <p>
+                            <strong>Dream Mackenzie:</strong> The younger version of Mackenzie when she remembers-dreams as she was. It makes us wonder how much she has changed, if at all.
+                        </p>
+                        <p>
+                            <strong>Jolie & Diane:</strong> Friends or family that Mackenzie and her mom try to contact. Their inability to be contacted contributes to Mackenzie's rising sense of anxiety.
+                        </p>
+                        <p>
+                            The characters in "The Bad Cree" have deep connections formed by trauma, family, and connection to Cree culture and spirituality. Family members such as the deceased Sabrina and Kôhkum are very influential, causing the experiences of the living characters and ultimately the story. The aunties are important central knowledge and the support system for the aunts and grown aunties; meanwhile, friends like Jolie provide ways to return and "ground" to "regular" life outside of everything else. Mackenzie, Tracy, and Cassidy's evolution of relationships and shared experiences is the emotional core of the story, with the supernatural threat they experience together.
+                        </p>
+                    </div>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Themes</h2>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        Begin with a concise summary of the novel's plot, ensuring you cover the major turning points and narrative structure.
-                        <strong class="text-blue-600">Placeholder for novel summary.</strong>
-                        <br><br>
-                        <em>Example:</em> The novel follows [protagonist's name] as they navigate [central conflict/setting], facing [key challenges] and ultimately discovering [resolution/lesson]. The narrative unfolds over [time period], providing a compelling journey through [specific themes].
-                    </p>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex justify-between items-center">
+                        Themes
+                        <button id="themesToggle" class="text-blue-600 hover:text-blue-800 focus:outline-none p-2 rounded-md">
+                            <svg id="themesArrow" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="themesContent" class="hidden text-lg text-gray-700 leading-relaxed space-y-4">
+                        <p class="font-semibold">Themes:</p>
+                        <p>
+                            <strong>Trauma and Grief:</strong> This is the most salient theme, beginning with earlier chapters and continuing to the end. The novel examines the complexity of trauma, especially related to Sabrina's death, the past and possibly intergenerational trauma. The grief is exhibited through dreams, avoidance and dysfunctional family dynamics. The wîhtikô can also be seen as a metaphor for grief and unresolved historical trauma.
+                        </p>
+                        <p>
+                            <strong>Family and Community:</strong> In spite of the individual challenges with grief and trauma, the constancy of family and community cannot be understated. Family is support, a network, and a bridge to cultural identity. Family ties may be strained but they persist.
+                        </p>
+                        <p>
+                            <strong>Memory and Reality:</strong> The intermingling of dreams, memories, and reality is a repeated theme, especially in Mackenzie's experience. The narrative grapples with the authenticity of memory, particularly in speaking to ideas of trauma and how past incidents interrupt the present moment.
+                        </p>
+                        <p>
+                            <strong>Indigenous spirituality and belief systems:</strong> According to Cree spirituality and traditions, what may be "inner" experiences such as dreams are often not viewed as purely psychological events but instead they are viewed as possibly openings to other realities or spiritual warnings, etc. Ancestral knowledge and elders' knowledge will appear as central in the ability to understand supernatural events.
+                        </p>
+                        <p>
+                            <strong>Identity and Self-Concept:</strong> The characters struggle with identity, especially in relation to their culture and past trauma. Mackenzie embarks on a journey of self-discovery, as she attempts to grapple with her past and her acceptance of herself.
+                        </p>
+                        <p>
+                            <strong>Supernatural:</strong> The supernatural, the presence of the wîhtikô for example, is a key aspect where Indigenous spiritual beliefs were leveraged and the mechanisms offered by these beliefs and experiences were potentially able to understand trauma.
+                        </p>
+                        <p class="font-semibold">The Narrative Arc:</p>
+                        <p>
+                            The story depicts a journey from loss and surviving trauma to healing, acceptance and reconciliation. The characters navigate their own pain – both individually and collectively, but draw strength from family, community and their cultural practices. The novel ends with a nod to the power of love, connection and living with trauma in a more whole way of being.
+                        </p>
+                    </div>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Motifs</h2>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        Discuss the main characters, their motivations, development, and significance to the story.
-                        <strong class="text-blue-600">Placeholder for character analysis.</strong>
-                        <br><br>
-                        <em>Example:</em> [Character A] serves as the moral compass, undergoing a significant transformation. [Character B] provides a foil, highlighting contrasting ideologies, while [Character C] embodies the societal pressures of the era.
-                    </p>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex justify-between items-center">
+                        Motifs
+                        <button id="motifsToggle" class="text-blue-600 hover:text-blue-800 focus:outline-none p-2 rounded-md">
+                            <svg id="motifsArrow" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="motifsContent" class="hidden text-lg text-gray-700 leading-relaxed space-y-4">
+                        <p>
+                            In eighteen chapters, The Bad Cree covers significant thematic progressions, as depicted in overall monster motif of the protagonist Mackenzie's journey through grief, trauma, and the supernatural. The motifs in the novel are compelling as they reconverge, expand, echo, and emphasize key places in a poignant way; which extends the layers of the novel and renders uncertainty regarding reality, memory, and the spiritual world.
+                        </p>
+                        <p class="font-semibold">Dreams: Portals to Trauma, Prophecy, and Healing</p>
+                        <p>
+                            Dreams are the most repeated, and most ascribed meaning, as both a direct site for Mackenzie's grief and the space for supernatural fights. At first, they are horrible nightmares (and they remain vivid and visceral ones) that replicate Sabrina's death and Kôhkum's death, they are the worst! The scream from Sabrina's dream, the smell of pine and blood, and the physical embodiments of that (the branches and crow's head) all brought back into reality, all really emphasize that dreams were undeniably working to encroach Mackenzie's waking life. They were also a vehicle for prophetic cation, all did much work for destabilizing reality and hinting at future events, notably the wîhtikô.
+                            As the narrative develops, dreams transition from a site of discomfort to sites of utility and processing traumatic experiences, as well as relationships with supernatural. They become sites to grapple with the "bad" — the inherited trauma that is woven into her family. By the last few bands, dreams are a form of housing for preparation to enter into a physical fight with the wîhtikô and eventually allow Mackenzie to connect with her Kôhkum and heal.
+                        </p>
+                        <p class="font-semibold">Crows: Ambiguous Guides and Protectors</p>
+                        <p>
+                            The crows are emerging to be important but ambiguous figures. From the beginning, they appear in Mackenzie's dreams around Sabrina's body, they watch her in reality, kind of like demonic onlookers, and they hover around her in the wake of her death as seemingly ominous prophecies, messengers, or guides. The crows' symbolism becomes clear as they always signify a strong connection to the supernatural as they warn of danger, or the wîhtikô's presence. Auntie Doreen even contributes to this ambiguity with her explanation of crows as "tricksters" who carry both good and bad messages.
+                            While figuring prominently in the text throughout, the crows shift from being a vague unwelcoming presence more toward an active force throughout the storyline. They start following characters which could represent spiritual presence, or an omen, but they eventually turn into an active force against the wîhtikô, ultimately devouring or consuming it. These types of changes illustrate the crows' protective and guiding connectivity when compared to the ominous presences.
+                        </p>
+                        <p class="font-semibold">Water: From Drowning Grief to Purification and Connection</p>
+                        <p>
+                            The motif of water, which appears as the ocean, the lake, (Aotchi Inu Sakayagan) or even just rain or a leaky apartment, is fluid and complex, in multiple ways. Water, in the opening part of the book, represents Mackenzie’s suffering, grief and feeling pulled under by her past realities - making this a literal aspect of the traumatic emotional journey she is traveling, as a reincarnation of her drowning dream. The coldness or fear of the lake and its "drowning dream" motif is featured regularly as well, signifying potential danger and bringing hidden emotional experiences to the surface.
+                            Above and beyond, water also takes on additional meaning, signifying home, cultural traditions, and healing. The lake - in particular, represents a place of sanctuary, a place of learning of the Ancestors - it stands for familial ties and relationships to cmokumsikow and the land. By the end of the story, water becomes a place of cleansing and healing as Mackenzie connects to her Ancestors and on her journey toward healing from the wîhtikô.
+                        </p>
+                        <p class="font-semibold">Nature and the Land: Grounding, Danger, and the Supernatural</p>
+                        <p>
+                            Nature - pine trees, woods, the prairies, mountains, the lake - is more than a setting; it actively reflects emotional states, brings up memories, and serves as a place of danger and safety. The woods (woods being a liminal space), represent danger and loss, and revelation, traumatic events unfold, supernatural emerges.
+                            As well, descriptions of the land, such as wide open sky and seasons, connect their relation to the land and character's collective ancestry. There are particular plants, and "witches' broom" parasitic growth reflective of the fix of the wîhtikô that exemplify the environment's interconnectedness with the characters' individual struggles and the supernatural experiences.
+                        </p>
+                        <p class="font-semibold">The "Bad": Inherited Trauma and Coexistence</p>
+                        <p>
+                            The abstract notion of "the bad" recurs throughout the story that is referenced, trauma and loss being a constant and unyielding thing. It's the way that trauma and loss that is grounded in history and legacy and inherent in many Indigenous communities are "passed and passed and passed down" - it "weaves itself into the marrow of our bones." Mackenzie feels that the "bad inside me was spreading, eating me up."
+                            This theme develops from overwhelming and consuming force to a realization that it can be contained, and that it can coexist with love and healing. The closing actions and themes suggest that the "bad," while it might not be destroyed, can be contained, and that while not free from the trauma and loss that would eventually arrive there was the possibility for a peace forward.
+                        </p>
+                        <p class="font-semibold">Silence vs. Noise/Voice: Internal Turmoil and Unspoken Truths</p>
+                        <p>
+                            Mackenzie's discomfort with silence and her desire for constant noise in earlier chapters are indicative of her desire to avoid her own loneliness and inner turmoil. Furthermore, the "uncomfortable silence" motif emphasizes the constant attempts at communication, and the unspoken pain lurking around her family. The quietness of the house upon return, leaving the door to their trauma open, and characters' failures to engage in direct communication surrounding pain highlights the burden of trauma that is unaddressed and unrecognized trajectory of knowledge.
+                            On the other hand, significant "noise" generated by the family reunion "ruckus" or "tsunami" represents distinctively varying expressions of emotion and modes of coping. The motif foregrounds the isolating condition of trauma, with a slow recognition and movement toward the need to end the silence, to share the experiences that for the healing process to begin.
+                        </p>
+                        <p class="font-semibold">Physical Sensations and Manifestations: Visceral Experiences of Trauma</p>
+                        <p>
+                            Mackenzie's experience is very much embodied. The cold/fever/burning feelings are reflections of internal discord and the bodily actions of her dreams and trauma. Experiences such as gazing at pine and blood, feeling the house "moving like its muscles are tensing", and picturing blood (Sabrina's wound, bloody flannel materialized, the wîhtikô consuming), create a bodily experience of emotional state and reality of the supernatural. The emphasis on hands and touch - kneading dough, holding hands - embodies connection and comfort, and the transmission of knowledge and love. It is also a juxtaposition to the bodily decay the withithekô is associated with.
+                        </p>
+                        <p>
+                            These recurring motifs together illustrate Mackenzie's multifaceted story of grappling with trauma, confronting her ancestry, and embarking on a path of healing and acceptance amid overwhelming loss and supernatural menace.
+                        </p>
+                    </div>
                 </div>
             </div>
 
             <div class="bg-gray-50 p-6 rounded-lg shadow-inner mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Character Trauma Web</h2>
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    Explore the major themes present in the novel and analyze how the author uses various literary devices to convey their message.
-                    <strong class="text-blue-600">Placeholder for themes and literary devices.</strong>
-                    <br><br>
-                    <em>Example Themes:</em> Identity, social injustice, the pursuit of freedom, nature vs. nurture, memory, war.
-                    <br><br>
-                    <em>Example Devices:</em> Symbolism (e.g., [symbol] representing [meaning]), imagery (e.g., vivid descriptions of [setting]), metaphor, simile, foreshadowing (e.g., [event] foreshadowing [outcome]), irony.
-                </p>
-            </div>
+  <h2 class="text-2xl font-bold text-gray-900 mb-4 flex justify-between items-center">
+    Character Trauma Web
+    <button id="traumaWebToggle" class="text-blue-600 hover:text-blue-800 focus:outline-none p-2 rounded-md">
+      <svg id="traumaWebArrow" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </h2>
+  <div id="traumaWebContent" class="hidden text-lg text-gray-700 leading-relaxed space-y-4">
+    <p class="font-semibold">The Interwoven Web of Trauma in <em>Bad Cree</em></p>
+    <p>
+      <em>Theme:</em> Intergenerational trauma, spiritual inheritance, grief and reconciliation.<br>
+      <em>Devices:</em> Symbolism (e.g., crows and mushrooms symbolizing death and decay), foreshadowing (e.g., Sabrina’s dream), supernatural realism, metaphor (the wîhtikô as internalized pain), dream sequences, irony.<br><br>
+    </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Two Clause Thesis v#1</h2>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        Analyze the author's writing style, tone, and the historical or cultural context in which the novel was written.
-                        <strong class="text-blue-600">Placeholder for author's style and context.</strong>
-                        <br><br>
-                        <em>Example:</em> The author's use of [style element, e.g., stream of consciousness, unreliable narrator] creates a unique reading experience. Written during [historical period], the novel reflects [societal concerns/movements].
-                    </p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Two Clause Theses v#2</h2>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        Conclude with your personal reflections on the novel's impact, its relevance today, and any lasting impressions.
-                        <strong class="text-blue-600">Placeholder for personal reflection.</strong>
-                        <br><br>
-                        <em>Example:</em> This novel profoundly challenged my perspective on [topic]. Its timeless message about [universal truth] continues to resonate, making it a crucial read for contemporary audiences.
-                    </p>
-                </div>
-                                    <br>
-            </div>
+    <p class="font-semibold">Sabrina's Ghostly Legacy</p>
+    <p>
+      Sabrina’s violent death anchors the trauma in <em>Bad Cree</em>. Her ghostly return, marked by a scar and foreshadowed by her own prophetic dream, initiates a haunting chain of events. Sabrina's spiritual vulnerability—sickened after a rat-filled dream—reveals her sensitivity to the spiritual realm. Her death is not just a loss, but a rupture that exposes the whole family to supernatural forces and unresolved grief.<br><br>
+    </p>
+
+    <p class="font-semibold">Mackenzie’s Descent and Healing</p>
+    <p>
+      Mackenzie’s trauma manifests physically and psychologically: shame, fragmented memories, fever, and disorientation. Her guilt—crystallized in a dream where Sabrina accuses her of cowardice—haunts her. She tries to escape her past by isolating herself in Vancouver, but this disconnection only deepens her wounds. The supernatural intrusions blur dream and reality, showing how deeply rooted trauma is. Mackenzie’s turning point arrives through vulnerability: confessing to Tracy and Cassidy, reconnecting with her mother through nurturing acts like kneading dough, and receiving healing visions from Kôhkum. Her eventual return to family marks the beginning of collective healing.<br><br>
+    </p>
+
+    <p class="font-semibold">Tracy’s Psychic Burden</p>
+    <p>
+      Tracy bears the emotional and psychic weight of Sabrina’s death. Her alcoholism serves as a defense against reliving Sabrina’s dream. Her connection to Mackenzie is so deep that she shares in spiritual wounds—“feeling the bites” from a rat attack. Her physical invasion by the wîhtikô—manifesting as mushrooms—underscores the entity’s power as a parasite of grief. Tracy’s healing, too, comes through confession and affirmation, especially the comfort that Sabrina is finally at peace, conveyed through Kôhkum and Mackenzie.<br><br>
+    </p>
+
+    <p class="font-semibold">Family as Both Wound and Remedy</p>
+    <p>
+      Loretta, Mackenzie’s mother, embodies stoic grief and suppressed emotion. Her journey from avoidance to reconnection mirrors Mackenzie’s. Cassidy, the youngest Auntie, provides grounding and empathy, offering a safe space for spiritual exploration. Aunties Doreen and Verna bring cultural knowledge, spiritual support, and reinforce traditions, empowering the younger women to confront the wîhtikô. Kôhkum’s posthumous presence is a spiritual anchor—an ancestral guide who assures the family of Sabrina’s peace and reinforces the importance of heritage.<br><br>
+    </p>
+
+    <p class="font-semibold">The wîhtikô: Embodiment of Collective Pain</p>
+    <p>
+      The wîhtikô is not simply a monster—it is the physical embodiment of unresolved grief, jealousy, and spiritual vulnerability. It exploits the family’s shame, guilt, and intergenerational silence. By appearing as Sabrina or growing on Tracy’s body, the wîhtikô symbolizes how trauma grows in the absence of communal healing. Its final declaration—“I have touched every one of them”—reveals the depth of its penetration into familial bonds and individual psyches.<br><br>
+    </p>
+
+    <p class="font-semibold">Conclusion: Reclaiming Heritage for Healing</p>
+    <p>
+      <em>Bad Cree</em> does not depict trauma as a singular event, but as a ripple across generations and identities. Through confession, kinship, and the return to cultural traditions, the characters begin the slow process of healing. Their shared spiritual practices and ancestral ties provide the foundation to move from isolated suffering to mutual vulnerability and resilience. Ultimately, the novel presents healing as a communal act—one that draws strength from heritage, courage, and love.
+    </p>
+  </div>
+</div>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+
+  <!-- Two-Clause Thesis v#1 -->
+  <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
+    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex justify-between items-center">
+      Two-Clause Thesis v#1
+      <button id="thesis1Toggle" class="text-blue-600 hover:text-blue-800 focus:outline-none p-2 rounded-md">
+        <svg id="thesis1Arrow" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </h2>
+    <div id="thesis1Content" class="hidden text-lg text-gray-700 leading-relaxed space-y-4">
+      <p class="font-semibold">Two-Clause Thesis Statement:</p>
+      <p>In <em>The Bad Cree</em>, it is Mackenzie’s feelings of unresolved sadness and the cultural trauma that has been positioned and carried about through generations of colonial violence that manifests physically in dreams and the terror of wîhtikô. Ultimately, the position is that we can only begin to heal collectively and reclaim Indigenous identity after confronting these fears and pains, which are inextricably tied to our spirits.</p>
+
+      <p class="font-semibold">Six Supporting Arguments:</p>
+
+      <p><strong>1. Examining the Physical Manifestation of Dream Objects as a Metaphor for Trauma:</strong> Mackenzie’s waking world is infiltrated by dream elements like the crow's head and the bloodied flannel, symbolizing the embodiment of unresolved grief. These physical manifestations tie personal trauma to larger historical realities such as residential schools and colonial health inequities, evoking TRC Calls to Action 18 and 24.</p>
+
+      <p><strong>2. The Wîhtikô as a Personification of Colonial Greed:</strong> Representing extractive industries and economic exploitation, the wîhtikô mirrors environmental and spiritual degradation. The narrative aligns with UNDRIP Articles 29 and 32, asserting Indigenous land rights and sovereignty over natural resources.</p>
+
+      <p><strong>3. The Connection Between Personal and Collective Trauma:</strong> Mackenzie’s journey shows that individual healing is incomplete without community reconciliation. The group’s collective act of confronting and purifying at the lake is a metaphor for intergenerational healing, echoing TRC’s vision of relational reconciliation.</p>
+    </div>
+  </div>
+
+  <!-- Two-Clause Thesis v#2 -->
+  <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
+    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex justify-between items-center">
+      Two-Clause Thesis v#2
+      <button id="thesis2Toggle" class="text-blue-600 hover:text-blue-800 focus:outline-none p-2 rounded-md">
+        <svg id="thesis2Arrow" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </h2>
+    <div id="thesis2Content" class="hidden text-lg text-gray-700 leading-relaxed space-y-4">
+      <p class="font-semibold">Two-Clause Thesis Statement:</p>
+      <p>In <em>Bad Cree</em>, Jessica Johns depicts trauma as both an isolating and intergenerational experience, but also as a source of healing through Indigenous knowledge, community, and a collective spiritual experience; by collapsing the boundaries between dream and reality, Johns illustrates the connection between personal memory and cultural identity; it shows that healing is not forgetting, rather healing is reclaiming collective narratives and resisting colonial silence.</p>
+
+      <p class="font-semibold">Six Supporting Arguments:</p>
+
+      <p><strong>1. Intergenerational Dreams as Memory Technology:</strong> The shared dreamscapes serve as cultural repositories, resisting colonial erasure. They connect with UNDRIP Article 31, validating dream knowledge as an Indigenous cultural expression.</p>
+
+      <p><strong>2. Cultural Reconnection as Resistance:</strong> Mackenzie’s healing hinges on restoring familial bonds. Her resistance with Cassidy and Tracy affirms Article 22 of UNDRIP, recognizing Indigenous women as key protectors of culture and survival.</p>
+
+      <p><strong>3. Land, Language, and Ceremony as Healing:</strong> The journey to the lake and ancestral territories symbolizes reclamation. This affirms UNDRIP Article 25 and TRC Call to Action 21, both emphasizing Indigenous peoples' rights to spiritually meaningful land-based healing.</p>
+    </div>
+  </div>
+</div>
 
 
             <div class="bg-gray-50 p-6 rounded-lg shadow-inner mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Key Passage Analysis</h2>
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    Explore the major themes present in the novel and analyze how the author uses various literary devices to convey their message.
-                    <strong class="text-blue-600">Placeholder for themes and literary devices.</strong>
-                    <br><br>
-                    <em>Example Themes:</em> Identity, social injustice, the pursuit of freedom, nature vs. nurture, memory, war.
-                    <br><br>
-                    <em>Example Devices:</em> Symbolism (e.g., [symbol] representing [meaning]), imagery (e.g., vivid descriptions of [setting]), metaphor, simile, foreshadowing (e.g., [event] foreshadowing [outcome]), irony.
-                </p>
+                <h2 class="text-2xl font-bold text-gray-900 mb-4 flex justify-between items-center">
+                    Passage Analysis
+                    <button id="keyPassageToggle" class="text-blue-600 hover:text-blue-800 focus:outline-none p-2 rounded-md">
+                        <svg id="keyPassageArrow" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <div id="keyPassageContent" class="hidden text-lg text-gray-700 leading-relaxed space-y-4">
+                    <p>
+                        "When I was nine, I had a dark dream where rats were eating Sabrina. I was suspended then too, hanging in a void. Sabrina floated in front of me, her eyes wide. Rats, hundreds of them, crawled across her body. They ran over her stomach, nibbling at her skin. They chattered and hissed to each other, talked low about where they wanted to burrow. I tried to move toward her by using the breathe and count method, tried to pound my fists and beat the rats away. But nothing worked, I couldn't move. For hours the rats crawled across her skin through her hair while we floated in nothingness together. I tried to tell her with my mind that it would all be okay, that the dream would be over soon, but her terrified eyes just saw the rats, the blood from their bites forming beads across her skin. Finally, I woke up, screaming, to Sabrina crying at the foot of my bed. When I held her against me, I felt the heat from her body. My mom came running into the room, panicked eyes, looking into every dark corner. Sabrina told her rats chew through her stomach and mom lifted her shirt, ran her fingers over smooth skin. The next morning, Dad set rat traps around our rooms. Sabrina got a fever so high, mom had to take her to the hospital. She stayed there for two days with an IV drip, tubes attached to her veins. On her second day in the hospital, a rash formed across her chest and she struggled to breathe. The doctor said it was an allergic reaction to something, but mom didn't believe them. Me and Tracy stayed in the hospital bed, slept on either side of Sabrina, keeping watch. Tracy said in her dream that night, she had felt the bites too. Mom told an elder and they gave her a dream catcher. She hung it above the hospital bed, slept on the couch in the room, and believed us. When her temperature finally went down and the rash started to go away, Sabrina came home. Dad cleaned up the empty rat traps from our room and we watched her closely for weeks after that, afraid that at any moment the rats would take her again. She seemed a little harder after that, even then. Her jaw locking shut like moms after something bad. I wish that was the worst thing that ever happened to her." (chapter 2)
+                    </p>
+                    <p>
+                        This excerpt from Chapter 2 of The Bad Cree operates as a crucible moment in Mackenzie's narrative journey, as it is a very symbolic and visceral description that delivers the effects of **trauma**, **identity**, **memory**, and the spiritual influence of dreams and reality that are central themes in the novel. Beginning with the reflection, "When I was nine, I had a darkness dream where rats were eating Sabrina," the text begins a course of inherited and embodied trauma that carries on throughout the novel.
+                    </p>
+                    <p>
+                        The dream is far beyond a nightmare. It is a prophetic vision, a shared psychic event, a spiritually empowering experience that illustrates the tenuous relationship between the real and the unreal. Mackenzie describes being "suspended... in a void," completely immobilized while "rats, hundreds of them, crawled around her body...nibbling her skin...the blood from their bites forming beads." This horrific, vulgar image is incredibly significant. The rats serve as both literal rats, and an integral part of the trauma, consuming trauma—externalizing Mackenzie and Sabrina's pain. Mackenzie's inability to "pound my fists and beat the rats away," establishes a theme of passive witnessing and with that, a paralyzing feeling of guilt and helplessness that she potentially embodies with a person she recognizes as someone who cannot protect their family.
+                    </p>
+                    <p>
+                        What heightens the effects of this dream is the startling and bizarre jolt to reality: "I woke up, screaming, to Sabrina crying at the foot of my bed." The division between the dream and waking is utterly obliterated, as Sabrina is suddenly exhibiting physical symptoms; she has an inexplicably high fever, respiratory distress, and a strange rash. The symptoms mirror the violent imagery from the dream. The disturbing overlap of the dream's accuracy and its apparent causality makes any claim that the results were only figurative impossible—it is spiritually and physically real. The event illustrates the overlap of waking life and the dream world, and provide the foundation for the dimensionalism of the narrative as it engages with different kinds of truth, memory, and affect, both tethers and breaks away from Western binaries.
+                    </p>
+                    <p>
+                        The family's response reveals cultural dissonance between Western medicine and Indigenous spiritual knowledge. The doctor rendered Sabrina's symptoms as an "allergic reaction," and while her mother recoiled in disbelief, she then turned to an elder who brought a dream catcher, invoking a deeper (Indigenous) understanding of these events. Thus it is not sufficient to describe this role of the elder as simply another alternative explanation: it is the assertion of cultural survival, and therefore cultural identity. In this case, the mother indicates reliance on Cree spiritual practices of her children which provides the family with confidence and bolsters their sense of identity in the middle of their trauma. The dream catcher hung over Sabrina's hospital bed became a symbol of belief, protection and validation. Importantly, the mother "believed us" - an act of intergenerational support that affirms the children's spiritual experiences, agency and recognition that is so often stripped from them by Western systems.
+                    </p>
+                    <p>
+                        If there is one thing that stands out most, it is Tracy's remark: "She said in her dream that night, she had felt the bites too." This disturbing detail changes Mackenzie's episode from an individual psychological event to a spiritual attack that transpires at a familial level. The familial trauma is evidence that the violence of the dream superseded Mackenzie's individual experience of the dream and indicates a familial compromised state that can be associated with Cree ancestry and heritage. While the sisters' connected trauma foreshadows their future united resistance against the wîhtikô in subsequent chapters, the occurrence of a mutual dreaming signifies an important theme in the novel: trauma in The Bad Cree is relational and intergenerational, often inscribed in family memory and experienced through a remnant of past psychic events.
+                    </p>
+                    <p>
+                        The change in Sabrina--"She seemed a little harder after that, even then. Her jaw shut tightly like moms after something bad"--evokes the enduring psychological impact of the experience. This line foreshadows the greater suffering and ensuing spiritual peril that Sabrina will eventually endure while drawing a clear and direct connection between the women of the family and their modes of coping: shut down resiliency and silent suffering. The mention of mom's reaction evokes the ghosts of familial pathology and intergenerational trauma, where silence serves as both shield and scar. The final line, "I Wish that was the worst thing that ever happened to her", is devastating. It layers a retrospective weight over Sabrina's life, suggesting that this early trauma only signified the initiation of another ongoing cycle of deeper and more insidious spiritual violence that Mackenzie later takes up through her visions of scratches and healing lacerations, culminating in Sabrina's death.
+                    </p>
+                    <p>
+                        So, despite its personal intimacy, this episode is not simply a childhood memory. It is a small-scale version of the larger narrative of the novel, where dreams have prophetic meaning, trauma passes through the vessel of bodies and bloodlines, and healing emerges not from medical rationalism but through the reclaiming of Indigenous knowledge and spiritual tradition. The episode demonstrates how memory is more than merely passive recollection; it is active haunting, that helps shape fears and relationships in the present. Mackenzie’s journey to comprehend what happened to Sabrina and why he could not save her is a product of this moment—where spiritual harm takes the shape of flesh and bone; where fear is familial; where the past insists on being re-engaged, not escaped.
+                    </p>
+                    <p>
+                        In conclusion, Chapter 2 captures the emotional, thematic, and spiritual centre of The Bad Cree. It shows how the trauma felt in dreams is able to affect physical reality and identities, how Indigenous worldviews provide spaces to make sense of that trauma, and how memory can be both heavy and instructive. The dream of the rats is not merely a nightmare: it is an acorn of ancestral pain, a collective psychic wound that shapes the sisters' destinies and Mackenzie's frantic search for healing.
+                    </p>
+                </div>
             </div>
         </section>
-    </main>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white p-6 text-center mt-8 rounded-t-lg">
@@ -154,6 +449,94 @@
                     link.classList.remove('active');
                 }
             });
+
+            // Dropdown functionality for Plot Summary
+            const plotToggle = document.getElementById('plotToggle');
+            const plotContent = document.getElementById('plotContent');
+            const plotArrow = document.getElementById('plotArrow');
+
+            plotToggle.addEventListener('click', () => {
+                plotContent.classList.toggle('hidden');
+                plotArrow.classList.toggle('rotate-90');
+            });
+
+            // Dropdown functionality for Characters Analysis
+            const charactersToggle = document.getElementById('charactersToggle');
+            const charactersContent = document.getElementById('charactersContent');
+            const charactersArrow = document.getElementById('charactersArrow');
+
+            charactersToggle.addEventListener('click', () => {
+                charactersContent.classList.toggle('hidden');
+                charactersArrow.classList.toggle('rotate-90');
+            });
+
+            // Dropdown functionality for Themes
+            const themesToggle = document.getElementById('themesToggle');
+            const themesContent = document.getElementById('themesContent');
+            const themesArrow = document.getElementById('themesArrow');
+
+            themesToggle.addEventListener('click', () => {
+                themesContent.classList.toggle('hidden');
+                themesArrow.classList.toggle('rotate-90');
+            });
+
+            // Dropdown functionality for Motifs
+            const motifsToggle = document.getElementById('motifsToggle');
+            const motifsContent = document.getElementById('motifsContent');
+            const motifsArrow = document.getElementById('motifsArrow');
+
+            motifsToggle.addEventListener('click', () => {
+                motifsContent.classList.toggle('hidden');
+                motifsArrow.classList.toggle('rotate-90');
+            });
+
+            // Dropdown functionality for Key Passage Analysis
+            const keyPassageToggle = document.getElementById('keyPassageToggle');
+            const keyPassageContent = document.getElementById('keyPassageContent');
+            const keyPassageArrow = document.getElementById('keyPassageArrow');
+
+            if (keyPassageToggle) {
+                keyPassageToggle.addEventListener('click', () => {
+                    keyPassageContent.classList.toggle('hidden');
+                    keyPassageArrow.classList.toggle('rotate-90');
+                });
+            }
+
+            // Dropdown functionality for Thesis 1
+            const thesis1Toggle = document.getElementById('thesis1Toggle');
+            const thesis1Content = document.getElementById('thesis1Content');
+            const thesis1Arrow = document.getElementById('thesis1Arrow');
+
+            if (thesis1Toggle) {
+                thesis1Toggle.addEventListener('click', () => {
+                    thesis1Content.classList.toggle('hidden');
+                    thesis1Arrow.classList.toggle('rotate-90');
+                });
+            }
+
+            // Dropdown functionality for Thesis 2
+            const thesis2Toggle = document.getElementById('thesis2Toggle');
+            const thesis2Content = document.getElementById('thesis2Content');
+            const thesis2Arrow = document.getElementById('thesis2Arrow');
+
+            if (thesis2Toggle) {
+                thesis2Toggle.addEventListener('click', () => {
+                    thesis2Content.classList.toggle('hidden');
+                    thesis2Arrow.classList.toggle('rotate-90');
+                });
+            }
+
+            // Dropdown functionality for Character Trauma Web
+            const traumaWebToggle = document.getElementById('traumaWebToggle');
+            const traumaWebContent = document.getElementById('traumaWebContent');
+            const traumaWebArrow = document.getElementById('traumaWebArrow');
+
+            if (traumaWebToggle) {
+                traumaWebToggle.addEventListener('click', () => {
+                    traumaWebContent.classList.toggle('hidden');
+                    traumaWebArrow.classList.toggle('rotate-90');
+                });
+            }
         });
     </script>
 </body>
