@@ -1,158 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sources - The Bad Cree Website</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom font import for Inter */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            @apply bg-gray-50 text-gray-800; /* Light background, dark text */
-        }
-        /* Style for active navigation link */
-        .nav-link.active {
-            @apply text-blue-600 border-b-2 border-blue-600;
-        }
-        .hanging-indent {
-            padding-left: 2em;
-            text-indent: -2em;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sources - The Bad Cree Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      @apply bg-gray-50 text-gray-800;
+    }
+    .nav-link.active {
+      @apply text-blue-600 border-b-2 border-blue-600;
+    }
+    .hanging-indent {
+      padding-left: 2em;
+      text-indent: -2em;
+    }
+  </style>
 </head>
 <body class="min-h-screen flex flex-col">
-    <!-- Header/Navigation Bar -->
-    <header class="bg-white shadow-md p-4">
-        <nav class="container mx-auto flex flex-wrap justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-gray-900 rounded-md p-2">Bad Cree by Jessica Johns</a>
-            <div class="space-x-4 md:space-x-6 flex flex-wrap justify-center mt-2 md:mt-0">
-                <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Introduction</a>
-                <a href="podcast.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Podcast</a>
-                <a href="novel.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Novel Presentation</a>
-                <a href="research.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Research</a>
-                <a href="conclusion.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Conclusion</a>
-                <a href="sources.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg active">Sources</a>
-            </div>
-        </nav>
-    </header>
+  <header class="bg-white shadow-md p-4">
+    <nav class="container mx-auto flex flex-wrap justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-gray-900 rounded-md p-2">Bad Cree by Jessica Johns</a>
+      <div class="space-x-4 md:space-x-6 flex flex-wrap justify-center mt-2 md:mt-0">
+        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Introduction</a>
+        <a href="podcast.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Podcast</a>
+        <a href="novel.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Novel Presentation</a>
+        <a href="research.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Research</a>
+        <a href="conclusion.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg">Conclusion</a>
+        <a href="sources.html" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200 text-lg active">Sources</a>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Main Content Area -->
-    <main class="flex-grow container mx-auto p-6 md:p-8">
-        <section class="bg-white p-8 rounded-lg shadow-lg">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 text-center">Works Cited and Sources</h1>
-            <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-                This page lists all the sources and references used throughout the project on <strong class="text-blue-600">The Bad Cree</strong>, including all materials.
-            </p>
+  <main class="flex-grow container mx-auto p-6 md:p-8">
+    <section class="bg-white p-8 rounded-lg shadow-lg">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 text-center">Works Cited and Sources</h1>
+      <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+        This page lists all the sources and references used throughout the project on <strong class="text-blue-600">The Bad Cree</strong>, organized by type.
+      </p>
 
-            <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Academic Sources</h2>
-                <ul class="list-none text-lg text-gray-700 leading-relaxed space-y-3">
-                    <li class="hanging-indent">
-                        Amnesty International Canada. “Out of Sight, Out of Mind.” 2020. <em>Amnesty International Canada</em>, <a href="https://www.amnesty.ca/our-work/issues/indigenous-peoples/missing-and-murdered-indigenous-women-and-girls/out-of-sight-out-of-mind/" class="text-blue-600 hover:underline">https://www.amnesty.ca/our-work/issues/indigenous-peoples/missing-and-murdered-indigenous-women-and-girls/out-of-sight-out-of-mind/</a>. Accessed 10 June 2025.
-                    </li>
-                    <li class="hanging-indent">
-                        Boughton Law. "Government of Canada Adopts UNDRIP." 2025. <em>Boughton Law</em>, <a href="https://boughtonlaw.com/news/government-of-canada-adopts-undrip/" class="text-blue-600 hover:underline">https://boughtonlaw.com/news/government-of-canada-adopts-undrip/</a>. Accessed 10 June 2025.
-                    </li>
-                    <li class="hanging-indent">
-                        Chacaby, Ma-Nee. <em>A Two-Spirit Journey</em>. University of Manitoba Press, 2016. <em>University of Manitoba Press</em>, <a href="https://uofmpress.ca/books/detail/a-two-spirit-journey" class="text-blue-600 hover:underline">https://uofmpress.ca/books/detail/a-two-spirit-journey</a>. Accessed 10 June 2025.
-                    </li>
-                    <li class="hanging-indent">
-                        Government of Canada. “Implementing the United Nations Declaration on the Rights of Indigenous Peoples Act.” 2021. <em>Justice Canada</em>, <a href="https://www.justice.gc.ca/eng/declaration/" class="text-blue-600 hover:underline">https://www.justice.gc.ca/eng/declaration/</a>. Accessed 10 June 2025.
-                    </li>
-                    <li class="hanging-indent">
-                        Indigenous Foundations. “Environmental Justice and Indigenous Rights.” <em>UBC Indigenous Foundations</em>, <a href="https://indigenousfoundations.arts.ubc.ca/environmental_justice_and_indigenous_rights/" class="text-blue-600 hover:underline">https://indigenousfoundations.arts.ubc.ca/environmental_justice_and_indigenous_rights/</a>. Accessed 10 June 2025.
-                    </li>
-                    <li class="hanging-indent">
-                        Johns, Jessica. <em>The Bad Cree</em>. Harper Perennial, 2023.
-                    </li>
-                    <li class="hanging-indent">
-                        Justice Canada. “Trauma and Violence-Informed Approaches to Policy.” 2024. <em>Justice Canada</em>, <a href="https://www.justice.gc.ca/eng/rp-pr/jr/tv-vt/" class="text-blue-600 hover:underline">https://www.justice.gc.ca/eng/rp-pr/jr/tv-vt/</a>. Accessed 10 June 2025.
-                    </li>
-                    <li class="hanging-indent">
-                        McLeod, Neal. <em>Cree Narrative Memory</em>. Purich Publishing, 2007.
-                    </li>
-                    <li class="hanging-indent">
-                        Montana Office of Public Instruction. “Reviewing Disney’s Pocahontas.” 2018. <em>Montana Office of Public Instruction</em>, <a href="https://opi.mt.gov/Portals/92/Docs/IndianEd/PocahontasReview.pdf" class="text-blue-600 hover:underline">https://opi.mt.gov/Portals/92/Docs/IndianEd/PocahontasReview.pdf</a>. Accessed 10 June 2025.
-                    </li>
-                    <li class="hanging-indent">
-                        Montreal Serai. “Telling Our Twisted Histories.” <em>Montreal Serai</em>, <a href="https://montrealserai.com/article/telling-our-twisted-histories/" class="text-blue-600 hover:underline">https://montrealserai.com/article/telling-our-twisted-histories/</a>. Accessed 10 June 2025.
-                    </li>
-                    <li class="hanging-indent">
-                        Native Women’s Association of Canada. “History of the Indian Act.” 2023. <em>Native Women’s Association of Canada</em>, <a href="https://www.nwac.ca/indian-act/" class="text-blue-600 hover:underline">https://www.nwac.ca/indian-act/</a>. Accessed 10 June 2025.
-                    </li>
-                    <li class="hanging-indent">
-                        Native Women’s Association of Canada. “Amnesty International Calls for Urgent Action for Missing and Murdered Indigenous Women.” 2014. <em>Native Women’s Association of Canada</em>, <a href="https://www.nwac.ca/2014/10/amnesty-international-calls-for-urgent-action-for-missing-and-murdered-indigenous-women/" class="text-blue-600 hover:underline">https://www.nwac.ca/2014/10/amnesty-international-calls-for-urgent-action-for-missing-and-murdered-indigenous-women/</a>. Accessed 10 June 2025.
-                    </li>
-                    <li class="hanging-indent">
-                        Simpson, Leanne Betasamosake. <em>As We Have Always Done: Indigenous Freedom Through Radical Resistance</em>. University of Minnesota Press, 2017.
-                    </li>
-                    <li class="hanging-indent">
-                        Soonias, Dallas. Review of <em>The Bad Cree</em>. Quoted in research paper.
-                    </li>
-                    <li class="hanging-indent">
-                        <em>Telling Our Twisted Histories</em>. CBC Podcasts, 2022. <a href="https://www.cbc.ca/listen/cbc-podcasts/1126-telling-our-twisted-histories" class="text-blue-600 hover:underline">https://www.cbc.ca/listen/cbc-podcasts/1126-telling-our-twisted-histories</a>. Accessed 10 June 2025.
-                    </li>
-                    <li class="hanging-indent">
-                        The Canadian Encyclopedia. “Idle No More.” <em>The Canadian Encyclopedia</em>, <a href="https://www.thecanadianencyclopedia.ca/en/article/idle-no-more" class="text-blue-600 hover:underline">https://www.thecanadianencyclopedia.ca/en/article/idle-no-more</a>. Accessed 10 June 2025.
-                    </li>
-                    <li class="hanging-indent">
-                        Truth and Reconciliation Commission of Canada. <em>Honouring the Truth, Reconciling for the Future: Summary of the Final Report of the Truth and Reconciliation Commission of Canada</em>. 2015. <a href="https://ehprc.ca/wp-content/uploads/2018/11/trc_calls_to_action_english2.pdf" class="text-blue-600 hover:underline">https://ehprc.ca/wp-content/uploads/2018/11/trc_calls_to_action_english2.pdf</a>. Accessed 10 June 2025.
-                    </li>
-                    <li class="hanging-indent">
-                        United Nations. <em>United Nations Declaration on the Rights of Indigenous Peoples</em>. 2007. <a href="https://www.un.org/development/desa/indigenouspeoples/declaration-on-the-rights-of-indigenous-peoples.html" class="text-blue-600 hover:underline">https://www.un.org/development/desa/indigenouspeoples/declaration-on-the-rights-of-indigenous-peoples.html</a>. Accessed 10 June 2025.
-                    </li>
-                </ul>
+      <div class="mb-10">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Academic & Research Sources</h2>
+        <ul class="list-none text-lg text-gray-700 leading-relaxed space-y-3">
+          <li class="hanging-indent">Amnesty International Canada. “Out of Sight, Out of Mind.” <em>Amnesty International Canada</em>, 2020, <a href="https://www.amnesty.ca/our-work/issues/indigenous-peoples/missing-and-murdered-indigenous-women-and-girls/out-of-sight-out-of-mind/" class="text-blue-600 hover:underline">www.amnesty.ca/our-work/issues/indigenous-peoples/missing-and-murdered-indigenous-women-and-girls/out-of-sight-out-of-mind/</a>. Accessed 10 June 2025.</li>
+          <li class="hanging-indent">Boughton Law. “UNDRIP in Practice: The Evolution of UNDRIP in Canadian Law.” <em>Boughton Law</em>, 2025, <a href="https://www.boughtonlaw.com/2025/01/undrip-in-practice-the-evolution-of-undrip-in-canadian-law/" class="text-blue-600 hover:underline">www.boughtonlaw.com/2025/01/undrip-in-practice-the-evolution-of-undrip-in-canadian-law/</a>. Accessed 10 June 2025.</li>
+          <li class="hanging-indent">Chacaby, Ma-Nee. <em>A Two-Spirit Journey</em>. University of Manitoba Press, 2016. <a href="https://uofmpress.ca/books/detail/a-two-spirit-journey" class="text-blue-600 hover:underline">uofmpress.ca/books/detail/a-two-spirit-journey</a>. Accessed 10 June 2025.</li>
+          <li class="hanging-indent">Government of Canada. “Implementing the United Nations Declaration on the Rights of Indigenous Peoples Act.” 2021, <a href="https://www.justice.gc.ca/eng/declaration/" class="text-blue-600 hover:underline">www.justice.gc.ca/eng/declaration/</a>. Accessed 10 June 2025.</li>
+          <li class="hanging-indent">Harm Reduction International. “Decolonising Drug Policy.” <a href="https://hri.global/publications/decolonising-drug-policy/" class="text-blue-600 hover:underline">hri.global/publications/decolonising-drug-policy/</a>. Accessed 10 June 2025.</li>
+          <li class="hanging-indent">Indigenous Foundations. “Aboriginal Rights.” <em>UBC Indigenous Foundations</em>, <a href="https://indigenousfoundations.arts.ubc.ca/aboriginal_rights/" class="text-blue-600 hover:underline">indigenousfoundations.arts.ubc.ca/aboriginal_rights/</a>. Accessed 10 June 2025.</li>
+          <li class="hanging-indent">Johns, Jessica. <em>The Bad Cree</em>. Harper Perennial, 2023.</li>
+          <li class="hanging-indent">Justice Canada. “Trauma and Violence-Informed Approaches to Policy.” <em>Government of Canada</em>, 2024, <a href="https://www.canada.ca/en/public-health/services/publications/health-risks-safety/trauma-violence-informed-approaches-policy-practice.html" class="text-blue-600 hover:underline">www.canada.ca/en/public-health/services/publications/health-risks-safety/trauma-violence-informed-approaches-policy-practice.html</a>. Accessed 10 June 2025.</li>
+          <li class="hanging-indent">McLeod, Neal. <em>Cree Narrative Memory</em>. Purich Publishing, 2007.</li>
+          <li class="hanging-indent">Montana Office of Public Instruction. “Historical Inaccuracy in Movies: Pocahontas & Peter Pan.” 2018, <a href="https://opi.mt.gov/Portals/182/Page%20Files/Indian%20Education/Social%20Studies/6-8/G7-8Historical_Inaccuracy_Movies_Pocahontas_Peter_Pan.pdf" class="text-blue-600 hover:underline">opi.mt.gov/Portals/182/Page%20Files/Indian%20Education/Social%20Studies/6-8/G7-8Historical_Inaccuracy_Movies_Pocahontas_Peter_Pan.pdf</a>. Accessed 10 June 2025.</li>
+          <li class="hanging-indent">Montreal Serai. “Telling Our Twisted Histories.” <a href="https://montrealserai.com/article/telling-our-twisted-histories/" class="text-blue-600 hover:underline">montrealserai.com/article/telling-our-twisted-histories/</a>. Accessed 10 June 2025.</li>
+          <li class="hanging-indent">Native Women’s Association of Canada. “Amnesty International Calls for Urgent Action.” 2014, <a href="https://amnesty.ca/what-you-can-do/urgent-actions/?gad_campaignid=247278925&gbraid=0AAAAADlHcEuPTbWxmOqwiNQqj3NAZAQCq" class="text-blue-600 hover:underline">amnesty.ca/what-you-can-do/urgent-actions/?gad_campaignid=247278925&gbraid=0AAAAADlHcEuPTbWxmOqwiNQqj3NAZAQCq</a>. Accessed 10 June 2025.</li>
+          <li class="hanging-indent">Native Women’s Association of Canada. “Indian Act.” <em>NWAC</em>, 2023, <a href="https://nwac.ca/policy/indian-act" class="text-blue-600 hover:underline">nwac.ca/policy/indian-act</a>. Accessed 10 June 2025.</li>
+          <li class="hanging-indent">Simpson, Leanne Betasamosake. <em>As We Have Always Done: Indigenous Freedom Through Radical Resistance</em>. University of Minnesota Press, 2017.</li>
+          <li class="hanging-indent">Soonias, Dallas. Review of <em>The Bad Cree</em>. Quoted in research paper.</li>
+          <li class="hanging-indent">“Telling Our Twisted Histories.” <em>CBC Podcasts</em>, 2022, <a href="https://www.cbc.ca/listen/cbc-podcasts/906-telling-our-twisted-histories" class="text-blue-600 hover:underline">www.cbc.ca/listen/cbc-podcasts/906-telling-our-twisted-histories</a>. Accessed 10 June 2025.</li>
+          <li class="hanging-indent">The Canadian Encyclopedia. “Idle No More.” <a href="https://www.thecanadianencyclopedia.ca/en/article/idle-no-more" class="text-blue-600 hover:underline">www.thecanadianencyclopedia.ca/en/article/idle-no-more</a>. Accessed 10 June 2025.</li>
+          <li class="hanging-indent">Truth and Reconciliation Commission of Canada. <em>Honouring the Truth, Reconciling for the Future</em>. 2015, <a href="https://irsi.ubc.ca/sites/default/files/inline-files/Executive_Summary_English_Web.pdf" class="text-blue-600 hover:underline">https://irsi.ubc.ca/sites/default/files/inline-files/Executive_Summary_English_Web.pdf</a>. Accessed 10 June 2025.</li>
+          <li class="hanging-indent">United Nations. <em>United Nations Declaration on the Rights of Indigenous Peoples</em>. 2007, <a href="https://www.un.org/development/desa/indigenouspeoples/declaration-on-the-rights-of-indigenous-peoples.html" class="text-blue-600 hover:underline">www.un.org/development/desa/indigenouspeoples/declaration-on-the-rights-of-indigenous-peoples.html</a>. Accessed 10 June 2025.</li>
+          <li class="hanging-indent">Watson, Bridgette. “Canada Adopting, Implementing UN Rights Declaration.” <em>CBC News</em>, 10 May 2016, <a href="https://www.cbc.ca/news/indigenous/canada-adopting-implementing-un-rights-declaration-1.3575272" class="text-blue-600 hover:underline">www.cbc.ca/news/indigenous/canada-adopting-implementing-un-rights-declaration-1.3575272</a>. Accessed 10 June 2025.</li>
+        </ul>
+      </div>
 
-                <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Podcast Specific Sources</h2>
-                <ul class="list-disc list-outside ml-6 text-lg text-gray-700 leading-relaxed space-y-3">
-                    <li>
-                        <strong class="text-blue-600">Placeholder:</strong> Host, H. H. (Host). (Year, Month Day). <em>Podcast Episode Title</em> [Audio podcast episode]. In <em>Podcast Name.</em> Publisher. URL (if available)
-                        <br>
-                        <em>Example:</em> Green, L. (Host). (2024, May 10). <em>Exploring Dystopian Futures in Literature</em> [Audio podcast episode]. In <em>The Bookworm's Nook.</em> Spotify.
-                    </li>
-                    <!-- Add more podcast sources as needed -->
-                </ul>
+      <div class="mb-10">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Podcast Specific Sources</h2>
+        <ul class="list-disc list-outside ml-6 text-lg text-gray-700 leading-relaxed space-y-3">
+          <li>Johns, Jessica. <em>The Bad Cree</em>. HarperCollins, 2023.</li>
+          <li>Truth and Reconciliation Commission of Canada. <em>Calls to Action</em>. 2015.</li>
+          <li>Truth and Reconciliation Commission of Canada. <em>Final Report, Vol. 1: The History, Part 1</em>. 2015.</li>
+          <li>United Nations. <em>UNDRIP</em>. UN General Assembly, 2007.</li>
+          <li>Government of Canada. <em>Indian Act</em>, R.S.C., 1985, c. I-5.</li>
+          <li><em>WeVideo.com</em> (used for podcast editing).</li>
+        </ul>
+      </div>
 
-                <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Images and Multimedia Sources</h2>
-                <ul class="list-disc list-outside ml-6 text-lg text-gray-700 leading-relaxed space-y-3">
-                    <li>
-                        <strong class="text-blue-600">Placeholder:</strong> Creator/Artist. (Year). <em>Image Title</em> [Type]. Source. URL
-                        <br>
-                        <em>Example:</em> [Artist Name]. (2015). <em>[Book Title] Cover Art</em> [Digital Image]. Penguin Random House. https://www.penguinrandomhouse.com/
-                    </li>
-                    <!-- Add more image/multimedia sources as needed -->
-                </ul>
+      <div class="mb-10">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Images and Multimedia</h2>
+        <ul class="list-disc list-outside ml-6 text-lg text-gray-700 leading-relaxed space-y-3">
+          <li><em>Bad Cree Cover Art</em>. Type Books. <a href="https://typebooks.ca/products/bad-cree-jan-10" class="text-blue-600 hover:underline">typebooks.ca/products/bad-cree-jan-10</a>. Accessed 10 June 2025.</li>
+        </ul>
+      </div>
 
-                <p class="text-lg text-gray-700 leading-relaxed mt-6">
-                </p>
-            </div>
-        </section>
-    </main>
+      <div>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Other Sources</h2>
+        <ul class="list-disc list-outside ml-6 text-lg text-gray-700 leading-relaxed space-y-3">
+          <li><em>ChatGPT.com</em> – For editing, grammar, and citation formatting support.</li>
+          <li><em>Truth and Reconciliation Commission</em> documents referenced throughout.</li>
+          <li><em>UNDRIP</em> as a recurring framework in project analysis.</li>
+        </ul>
+      </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white p-6 text-center mt-8 rounded-t-lg">
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white p-6 text-center mt-8 rounded-t-lg">
     <p>&copy; 2025 Moksh Siruvani. All rights reserved.</p>
     <p class="text-sm mt-2">English ISU | Reproduction of this project is prohibited under the AFL-3.0 license</p>
   </footer>
 
-    <script>
-        // JavaScript to highlight the active navigation link
-        document.addEventListener('DOMContentLoaded', () => {
-            const currentPath = window.location.pathname.split('/').pop();
-            const navLinks = document.querySelectorAll('.nav-link');
-
-            navLinks.forEach(link => {
-                const linkPath = link.getAttribute('href');
-                if (linkPath === currentPath) {
-                    link.classList.add('active');
-                } else {
-                    link.classList.remove('active');
-                }
-            });
-        });
-    </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const currentPath = window.location.pathname.split('/').pop();
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
